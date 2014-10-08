@@ -1,0 +1,1 @@
+Test new static page
