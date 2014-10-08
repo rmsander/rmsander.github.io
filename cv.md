@@ -1,10 +1,10 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Curriculum Vitae
+permalink: /cv/
 ---
 
-Some information about you!
+More information than expected! My CV will come here!
 
 ### More Information
 
