@@ -2,14 +2,13 @@
 <html>
 
 <head>
-    <META NAME="keywords" CONTENT="Floris De Smedt, PhD, computer vision, knowledge representation, image processing, computer vision, eavise, De Nayer, Lessius Mechelen, visics">
-    <META NAME="robots" content="all">
+    <META NAME="keywords" CONTENT="Steven Puttemans, PhD, computer vision, image processing, computer vision, eavise, De Nayer, visics, object detection, openCV">
 	
     <META HTTP-EQUIV="content-style-type" CONTENT="text/css">
     <META HTTP-EQUIV="content-script-type" CONTENT="text/javascript">
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />    
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <title>Homepage Floris De Smedt</title>
+    <title>Homepage Steven Puttemans</title>
 </head>
 
 <body>
@@ -17,22 +16,17 @@
 
 <div id=dLogo>
 
-	<div id=ProfileImage>
-		<center><img src="images/fds.jpg"/ height=145px></center>
+	<div id=top_images>
+		<img src="images/profiel_spu.jpg"/ height=145px>
+		<a href="http://www.eavise.be"><img src="images/logo_eavise.jpg"/></a>
 	</div>
 
-	<div id=TopBanner>
+	<div id=top_banner>
 		<hr/>
-		<h2>Floris De Smedt</h2>
-		PhD researcher - EAVISE | PSI/VISICS<br/>
+		<h2>Steven Puttemans</h2>
+		PhD researcher - EAVISE Research Group | PSI/VISICS<br/>
+		KU Leuven - Technology Campus De Nayer<br/>
 		<hr/>
-	</div>
-	
-	<div id=Logo>
-		<center>
-		<a href="http://www.eavise.be"><img src="images/logo.jpg"/></a>
-		<a href="http://www.esat.kuleuven.be/psi/visics/"><img src="images/logo_visics.png"/></a>
-		</center>
 	</div>
 </div>
 
