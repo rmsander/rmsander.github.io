@@ -12,7 +12,7 @@ permalink: /publications/
 
 ### Automated Walking Aid Detector Based on Indoor Video Recordings
 
-![]({{ site.url }}/images/orchid.png)
+![]({{ site.url }}/images/walker.png)
 
 *Presented at EMBC2015, Milan, Italy.*
 
@@ -38,7 +38,7 @@ The goal of this research is to investigate the possibility of using object cate
 
 ### Optimal object categorization under application specific conditions + Extended Journal Version
 
-![]({{ site.url }}/images/orchid.png)
+![]({{ site.url }}/images/optimal.png)
 
 *Presented at VISAPP2014, Lissabon, Portugal.*
 
@@ -58,7 +58,7 @@ Day-to-day industrial computer vision applications focusing on object detection 
 
 ### How to exploit scene constraints to improve object categorization algorithms for industrial applications?
 
-![]({{ site.url }}/images/orchid.png)
+![]({{ site.url }}/images/constraints.png)
 
 *Presented at VISAPP2013, Barcelona, Spain.*
 
@@ -74,7 +74,7 @@ State-of-the-art object categorization algorithms are designed to be heavily rob
 
 ### Weighted multi-method user identification in gaming applications
 
-![]({{ site.url }}/images/orchid.png)
+![]({{ site.url }}/images/identification.png)
 
 In this paper, considerations and methodology for user identification in gaming applications is discussed. Typical user identification processes operate through input devices that yield qualitative audio and video data in a controlled environment. In gaming applications, low cost hardware and uncontrolled environmental conditions pose a serious obstacle towards efficient user identification. Through a combination of several methods, including speaker recognition, facial feature extraction and the eigenface recognition approach for face recognition, a robust algorithm can be developed. Weighing the relative importance of each method leads to more robust recognition, despite the limitations associated with the application.
 
