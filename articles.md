@@ -1,11 +1,11 @@
 ---
 layout: page
-permalink: /publications/
+permalink: /articles/
 ---
 
 ----------------------------------------------------------------
 
-## Publications in 2015
+## Articles in 2015
 
 ----------------------------------------------------------------
 
@@ -51,7 +51,7 @@ Day-to-day industrial computer vision applications focusing on object detection 
 
 ----------------------------------------------------------------
 
-## Publications in 2013
+## Articles in 2013
 
 ----------------------------------------------------------------
 
@@ -64,19 +64,3 @@ Day-to-day industrial computer vision applications focusing on object detection 
 State-of-the-art object categorization algorithms are designed to be heavily robust against scene variations like illumination changes, occlusions, scale changes, orientation and location differences, background clutter and object intra-class variability. However, in industrial machine vision applications where objects with variable appearance have to be detected, many of these variations are in fact constant and can be seen as constraints on the scene, which in turn can reduce the enormous search space for object instances. In this position paper we explore the possibility to fixate certain of these variations according to the application specific scene constraints and investigate the influence of these adaptations on three main aspects of object categorization algorithms: the amount of training data needed, the speed of the detection and the amount of false detections. Moreover, we propose steps to simplify the training process under such scene constraints.
 
 *Download paper by clicking [here](http://eavise.be/papers/VISAPP2013.pdf).*
-
-----------------------------------------------------------------
-
-## Publications in 2011
-
-----------------------------------------------------------------
-
-### Weighted multi-method user identification in gaming applications
-
-![]({{ site.url }}/images/identification.png)
-
-In this paper, considerations and methodology for user identification in gaming applications is discussed. Typical user identification processes operate through input devices that yield qualitative audio and video data in a controlled environment. In gaming applications, low cost hardware and uncontrolled environmental conditions pose a serious obstacle towards efficient user identification. Through a combination of several methods, including speaker recognition, facial feature extraction and the eigenface recognition approach for face recognition, a robust algorithm can be developed. Weighing the relative importance of each method leads to more robust recognition, despite the limitations associated with the application.
-
-*Download paper by clicking [here](https://lirias.kuleuven.be/bitstream/123456789/390669/1/Weighted+multi-method+user+identification+in+gaming+applications.pdf).*
-
-----------------------------------------------------------------
