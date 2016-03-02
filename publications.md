@@ -5,6 +5,22 @@ permalink: /publications/
 
 ----------------------------------------------------------------
 
+## Publications in 2016
+
+----------------------------------------------------------------
+
+### Safeguarding Privacy by Reliable Automatic Blurring of Faces in Mobile Mapping Images
+
+![]({{ site.url }}/images/masking.png)
+
+*Presented at VISIGRAPP2016, Rome, Italy.*
+
+When capturing images in the wild containing pedestrians, privacy issues remain a concern for industrial applications. Our application, collecting cycloramic mobile mapping data in crowded environments, is an example of this. If the data is processed and accessed by third parties, privacy of individuals inside the data must be ensured. This is where pedestrian detectors come into play, used to detect individuals and make them privacy safe through blurring. However the problem of undesired false positive detections, typical for pedestrian detectors and unavoidable, still leaves undesired areas of the images being blurred. We tackled this problem by using application specific scene constraints, under the form of a scale-space mapping based on the pedestrian detector’s training data, combined with reducing the field of interest and a specific false positive elimination classifier. Furthermore we applied a technique called soft blurring to avoid the artificial look of simply applying a Gaussian blur to the found detections, which resulted in an effective full-automatic masking pipeline for privacy safeguarding in mobile mapping images. We prove that we can use pre-trained pedestrian detection models, but, based on a limited amount of application-specific annotations, we can boost the detection accuracy enormously by exploiting scene specific constraints.
+
+*Download paper by clicking [here](https://lirias.kuleuven.be/bitstream/123456789/516446/2/VISAPP2016.pdf).*
+
+----------------------------------------------------------------
+
 ## Publications in 2015
 
 ----------------------------------------------------------------
