@@ -4,8 +4,6 @@ title: My curriculum vitae
 permalink: /cv/
 ---
 
-2011-2012 : Master of Artificial Intelligence
+If you want a detailed overview of my curriculum vitae I suggest taking a look at my [Linked-In profile](https://www.linkedin.com/in/stevenputtemans) or my [ResearchGate profile](https://www.researchgate.net/profile/Steven_Puttemans) which both contain my most recent and up to data work experiences and achievements.
 
-2009-2011 : Master of Science in Electronics - ICT
-
-2006-2009 : Bachelor Electronics - ICT
+If you prefer a PDF version of my curriculum vitae you can get it [here]({{ site.url }}/docs/cv.pdf).
