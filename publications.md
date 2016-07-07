@@ -9,6 +9,33 @@ permalink: /publications/
 
 ----------------------------------------------------------------
 
+### Automated Visual Fruit Detection for Harvest Estimation and Robotic Harvesting
+
+![]({{ site.url }}/images/fruit_detection.png)
+
+*Submitted at IPTA2016, Oulu, Finland.*
+
+<p style='text-align: justify;'>
+A fully automated detection and localisation of fruit in orchards is a key component of automatic robotic harvesting
+systems, still a dream of many farmers around the world to cope with large production and personnel costs. In the past years
+a lot of research on this topic has been performed, using very basic computer vision techniques, like colour based segmentation,
+as a possible solution. When not using standard RGB cameras, research tends to resort to other sensors, like hyper spectral or
+3D. However more recent advances in computer vision got a broad range of more advanced object detection techniques that
+could improve the quality of fruit detection from RGB images drastically. We suggest to use a object categorisation technique
+based on a boosted cascade of weak classifiers to implement a fully automated semi-supervised fruit detector and demonstrate it
+on strawberries and apples. Compared to existing techniques we improve single object instance detection in fruit clusters, using a supervised machine learning instead of hand crafting image filters specific to the application. Moreover we integrate application specific colour information to ensure a more stable output of our fully automated detection algorithm. The developed technique is validated on strawberries and apples and is proven to have large benefits in the field of automated harvest and crop estimation.
+</p>
+
+### Detection of Photovoltaic Installations in RGB Aerial Imaging: a Comparative Study.
+
+![]({{ site.url }}/images/solar_panel.png)
+
+*Accepted at GEOBIA2016, Enschede, The Netherlands.*
+
+<p style='text-align: justify;'>
+In this work, we compare four different approaches for detecting photovoltaic installations from RGB aerial images. Our client, an electricity grid administrator, wants to hunt down fraud with unregistered illegal solar panel installations by detecting installations in aerial imagery and checking these against their database of registered installations. The detection of solar panels in these RGB images is a difficult task. Reasons are the relatively low resolution (at 25 cm/pixel an individual solar panel only measures about 9 × 7 pixels), the undiscriminating colour properties of the object (due to in-class variance and specular effects) and the apparent shape variability (rotation and skew due to the different roofs slant angles). Therefore, straightforward object segmentation techniques do not yield a satisfying solution, as proven in this paper. We compared four state-of-the-art object detection approaches for this task. First we experimented with a machine learning object detection technique based on pixel-based support vector machine classification. Secondly we developed an approach using MSER based colour segmentation and shape analysis. Finally a dual approach based on object categorization using the boosted cascade classifier technique of Viola & Jones and the aggregate channel features technique of Dollar et al., is introduced, learning a combination of colour and gradient feature based classifiers from a given training set. We successfully evaluate these four different approaches on a fully labelled test set of a 8000 × 8000 pixel, 4 square km zone containing 315 solar panel installations with in total more than 10.000 individual panels.
+</p>
+
 ### Safeguarding Privacy by Reliable Automatic Blurring of Faces in Mobile Mapping Images
 
 ![]({{ site.url }}/images/masking.png)
