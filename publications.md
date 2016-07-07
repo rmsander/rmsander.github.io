@@ -28,7 +28,7 @@ on strawberries and apples. Compared to existing techniques we improve single ob
 
 ### Detection of Photovoltaic Installations in RGB Aerial Imaging: a Comparative Study.
 
-![]({{ site.url }}/images/solar_panel.png)
+![]({{ site.url }}/images/solar_panels.png)
 
 *Accepted at GEOBIA2016, Enschede, The Netherlands.*
 
