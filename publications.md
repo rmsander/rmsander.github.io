@@ -36,6 +36,10 @@ on strawberries and apples. Compared to existing techniques we improve single ob
 In this work, we compare four different approaches for detecting photovoltaic installations from RGB aerial images. Our client, an electricity grid administrator, wants to hunt down fraud with unregistered illegal solar panel installations by detecting installations in aerial imagery and checking these against their database of registered installations. The detection of solar panels in these RGB images is a difficult task. Reasons are the relatively low resolution (at 25 cm/pixel an individual solar panel only measures about 9 × 7 pixels), the undiscriminating colour properties of the object (due to in-class variance and specular effects) and the apparent shape variability (rotation and skew due to the different roofs slant angles). Therefore, straightforward object segmentation techniques do not yield a satisfying solution, as proven in this paper. We compared four state-of-the-art object detection approaches for this task. First we experimented with a machine learning object detection technique based on pixel-based support vector machine classification. Secondly we developed an approach using MSER based colour segmentation and shape analysis. Finally a dual approach based on object categorization using the boosted cascade classifier technique of Viola & Jones and the aggregate channel features technique of Dollar et al., is introduced, learning a combination of colour and gradient feature based classifiers from a given training set. We successfully evaluate these four different approaches on a fully labelled test set of a 8000 × 8000 pixel, 4 square km zone containing 315 solar panel installations with in total more than 10.000 individual panels.
 </p>
 
+*Download the paper by clicking [here](https://lirias.kuleuven.be/bitstream/123456789/546313/1/submission_final2.pdf).*
+
+*Download the 20 min oral presentation by clicking [here]({{ site.url }}/presentations/GEOBIA2016.pdf).*
+
 ### Safeguarding Privacy by Reliable Automatic Blurring of Faces in Mobile Mapping Images
 
 ![]({{ site.url }}/images/masking.png)
