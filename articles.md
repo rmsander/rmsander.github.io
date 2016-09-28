@@ -5,6 +5,47 @@ permalink: /articles/
 
 ----------------------------------------------------------------
 
+## Articles in 2016
+
+----------------------------------------------------------------
+
+
+### Aardbeien plukken kan nu ook door een robot.
+
+Publised at [http://www.invlaanderen.be](http://www.invlaanderen.be). *Download article by clicking [here]({{ site.url }}/articles/invlaanderen2016.pdf).*
+
+### GFActueel, Plukrobot plukt een aardbei in 5 seconden.
+
+Publised at [http://www.gfactueel.be](http://www.gfactueel.be). *Download article by clicking [here]({{ site.url }}/articles/GFActueel2016.pdf).*
+
+### Robot vervangt mens bij aardbeienpluk. 
+
+Publised at [http://www.hln.be](http://www.hln.be). *Download article by clicking [here]({{ site.url }}/articles/HLN2016.pdf).*
+
+### Prototype van plukrobot voor aardbeien voorgesteld.
+
+Publised at [http://www.engineeringnet.be](http://www.engineeringnet.be). *Download article by clicking [here]({{ site.url }}/articles/engineeringNET2016.pdf).*
+
+### KAS SierteeltNet Marel Orchids sorteert met camerasoftware. 
+
+Publised in KAS SierteeltNet. *Download article by clicking [here]({{ site.url }}/articles/Maarel2016.pdf).*
+
+### Planten begrijpen door identificatie.
+
+Published in Vision + Robotics. *Download article by clicking [here]({{ site.url }}/articles/VR2016April.pdf).*
+
+----------------------------------------------------------------
+
+## Articles in 2015
+
+----------------------------------------------------------------
+
+### Orchid chain information from breeding to flowering, Aris Vision Systems.
+
+Published in OrchidGuide 2015. *Download article by clicking [here]({{ site.url }}/articles/OrchidGuide2015.pdf).*
+
+----------------------------------------------------------------
+
 ## Articles in 2014
 
 ----------------------------------------------------------------
