@@ -5,15 +5,48 @@ permalink: /publications/
 
 ----------------------------------------------------------------
 
+## Publications in 2017
+
+----------------------------------------------------------------
+
+### Improving Open Source Face Detection by Combining an Adapted Cascade Classification Pipeline and Active Learning
+
+![]({{ site.url }}/images/face_detection.png)
+
+*Accepted at VISAPP2017, Porto, Portugal.*
+
+<p style='text-align: justify;'>
+Recent advances in computer vision have almost solved the problem of in the wild face detection, using complex techniques like convolutional neural networks. On the contrary many open source computer vision frameworks like OpenCV have not yet made the switch to these complex techniques and tend to depend on well established algorithms for face detection, like the cascade classification pipeline suggested by Viola and Jones. However the accuracy of these open source face detection models on public datasets like FDDB stays rather low, mainly due to the relatively high number of false positive detections produced. We propose several adaptations to the current existing LBP/AdaBoost cascade classification pipeline of OpenCV. This is done by improving the training sample generation and annotation procedure, and by applying an active learning strategy. This boosts the accuracy of in the wild face detection on the FDDB dataset quite drastically, closing the gap towards the accuracy levels gained by state-of-the-art CNN-based face detectors. The proposed changes allow us to provide a new face detection model to the OpenCV framework, achieving a remarkably high precision at an acceptable recall rate, offering a model that ensures detected faces are actually faces, a critical requirement for further processing pipelines like person identification, etc.
+</p>
+
+*The associated detection models for this publication can be found [here](https://github.com/opencv/opencv/pull/7910).*
+
+----------------------------------------------------------------
+
 ## Publications in 2016
 
 ----------------------------------------------------------------
+
+### How to reach top accuracy for a visual pedestrian detection warning system from a car?
+
+![]({{ site.url }}/images/LWIR.png)
+
+*Presented at IPTA2016, Oulu, Finland.*
+
+<p style='text-align: justify;'>
+Due to the wide applicability of pedestrian detection
+in surveillance and safety, this research topic has received much attention in computer vision literature. However, the focus of this research mainly lies in detecting and locating pedestrians individually as accurate as possible. In recent years, a number of datasets are captured using a forward looking camera from a car, which imposes the application of warning the driver when pedestrians are in front of the car. For such applications, it is not required to detect each pedestrian independently, but to generate an alarm when necessary. In this paper we explore techniques to boost the accuracy of recent channel-based algorithms in this application: algorithmic refinements as well as the inclusion of an LWIR image channel. We use the KAIST dataset which is constructed from image-pairs of both the visual and the LWIR spectrum, in day and night conditions. We study the influence of techniques that have shown success in literature.
+</p>
+
+*Download the paper by clicking [here](https://lirias.kuleuven.be/bitstream/123456789/562021/1/40_paper_fds.pdf).*
+
+*Download the 15 min oral presentation by clicking [here]({{ site.url }}/presentations/IPTA2016FDS.pdf).*
 
 ### Automated Visual Fruit Detection for Harvest Estimation and Robotic Harvesting
 
 ![]({{ site.url }}/images/fruit_detection.png)
 
-*Submitted at IPTA2016, Oulu, Finland.*
+*Presented at IPTA2016, Oulu, Finland.*
 
 <p style='text-align: justify;'>
 A fully automated detection and localisation of fruit in orchards is a key component of automatic robotic harvesting
@@ -25,6 +58,10 @@ could improve the quality of fruit detection from RGB images drastically. We sug
 based on a boosted cascade of weak classifiers to implement a fully automated semi-supervised fruit detector and demonstrate it
 on strawberries and apples. Compared to existing techniques we improve single object instance detection in fruit clusters, using a supervised machine learning instead of hand crafting image filters specific to the application. Moreover we integrate application specific colour information to ensure a more stable output of our fully automated detection algorithm. The developed technique is validated on strawberries and apples and is proven to have large benefits in the field of automated harvest and crop estimation.
 </p>
+
+*Download the paper by clicking [here](https://lirias.kuleuven.be/bitstream/123456789/546316/3/IPTA2016_submission_camera_ready.pdf).*
+
+*Download the 15 min oral presentation by clicking [here]({{ site.url }}/presentations/IPTA2016SPU.pdf).*
 
 ### Detection of Photovoltaic Installations in RGB Aerial Imaging: a Comparative Study.
 

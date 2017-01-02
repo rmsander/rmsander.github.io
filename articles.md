@@ -5,10 +5,9 @@ permalink: /articles/
 
 ----------------------------------------------------------------
 
-## Articles in 2016
+## Articles in 2016 (contributed partial research)
 
 ----------------------------------------------------------------
-
 
 ### Aardbeien plukken kan nu ook door een robot.
 
