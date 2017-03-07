@@ -4,6 +4,30 @@ permalink: /datasets/
 ---
 
 ----------------------------------------------------------------
+<h2>Open Source Face Detection Dataset</h2>
+----------------------------------------------------------------
+
+<div style="text-align: center">
+<img src="http://eavise.be/OpenSourceFaceDetection/face_detection.png" height="200" />
+</div>
+
+<p style='text-align: justify;'>
+The EAVISE Open Source Face Detection Dataset consists of several items that were used to generate the improved frontal face detection model using LBP features and AdaBoost for OpenCV3.2.
+<ul>
+<li>
+The annotations of the FDDB dataset, converted to the OpenCV format for doing a correct evaluation. They can be downloaded through <a href="http://eavise.be/OpenSourceFaceDetection/annotationsFDDB.txt">the following link</a>. [right click - save as]
+</li>
+<li>
+The final trained model (IterativeHardPositives+ model) which is included in OpenCV 3.2. This model can be downloaded at <a href="https://github.com/opencv/opencv/tree/master/data/lbpcascades">the following link</a>.
+</li>
+</ul>
+</p>
+
+<p style='text-align: justify;'>
+If you plan to use this dataset, we require you to cite the following publication: 2017; <i>Improving Open Source Face Detection by Combining an Adapted Cascade Classification Pipeline and Active Learning</i>; <b>Puttemans, Steven; Can, Ergun; Goedem&#233;, Toon</b>; Proceedings of VISIGRAPP2017; published; Porto, Portugal; 28 February 2017. 
+</p>
+
+----------------------------------------------------------------
 <h2>Solar Panel Dataset</h2>
 ----------------------------------------------------------------
 
