@@ -13,13 +13,17 @@ permalink: /publications/
 
 ![]({{ site.url }}/images/face_detection.png)
 
-*Accepted at VISAPP2017, Porto, Portugal.*
+*Presented at VISAPP2017, Porto, Portugal.*
 
 <p style='text-align: justify;'>
 Recent advances in computer vision have almost solved the problem of in the wild face detection, using complex techniques like convolutional neural networks. On the contrary many open source computer vision frameworks like OpenCV have not yet made the switch to these complex techniques and tend to depend on well established algorithms for face detection, like the cascade classification pipeline suggested by Viola and Jones. However the accuracy of these open source face detection models on public datasets like FDDB stays rather low, mainly due to the relatively high number of false positive detections produced. We propose several adaptations to the current existing LBP/AdaBoost cascade classification pipeline of OpenCV. This is done by improving the training sample generation and annotation procedure, and by applying an active learning strategy. This boosts the accuracy of in the wild face detection on the FDDB dataset quite drastically, closing the gap towards the accuracy levels gained by state-of-the-art CNN-based face detectors. The proposed changes allow us to provide a new face detection model to the OpenCV framework, achieving a remarkably high precision at an acceptable recall rate, offering a model that ensures detected faces are actually faces, a critical requirement for further processing pipelines like person identification, etc.
 </p>
 
-*The associated detection models for this publication can be found [here](https://github.com/opencv/opencv/pull/7910).*
+*The associated detection model (IterativeHardPositives+ model in paper) for this publication can be found [here](https://github.com/StevenPuttemans/opencv/blob/master/data/lbpcascades/lbpcascade_frontalface_improved.xml).*
+
+*Download the paper by clicking [here](https://lirias.kuleuven.be/bitstream/123456789/560283/2/VISAPP2017.pdf).*
+
+*Download the poster presentation by clicking [here]({{ site.url }}/presentations/VISIGRAPP2017poster.pdf).*
 
 ----------------------------------------------------------------
 
