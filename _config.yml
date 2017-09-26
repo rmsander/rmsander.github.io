@@ -74,4 +74,4 @@ exclude:
     - README.md
 
 # Adding a theme
-theme: jekyll-theme-slate
+theme: jekyll-theme-merlot
