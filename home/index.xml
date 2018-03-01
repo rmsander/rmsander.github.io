@@ -67,22 +67,13 @@
     </item>
     
     <item>
-      <title>Custom Section</title>
+      <title>Teaching</title>
       <link>http://stevenputtemans.github.io/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>http://stevenputtemans.github.io/home/teaching/</guid>
-      <description>This is an example of using the custom widget to create your own homepage section.
-To remove this section, either delete content/home/teaching.md or edit the frontmatter of the file to deactivate the widget by setting active = false.</description>
-    </item>
-    
-    <item>
-      <title>Tags</title>
-      <link>http://stevenputtemans.github.io/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 +0200</pubDate>
-      
-      <guid>http://stevenputtemans.github.io/home/tags/</guid>
-      <description></description>
+      <description>During my (post-)doctoral track I have organised several academic courses
+ Scientific seminars (2017 - now) Research methodologies (2018 - now) Computer vision hands-on labs using the OpenCV framework (2015 - now) Scientific project for second year students (2014 - 2017)  Topic 1: 360 degree panoramic photo helm Topic 2: Building a laser line based 3D scanner Topic 3: (2x) Building an anti burglar system using sensor fusion Topic 4: Mini-me in 3D (creating + printing 3D models of students) Topic 5: (2x) Marker based augmented reality  Introductory XHTML and CSS classes (2012) Introductory Matlab classes (2012)  Furthermore I have been a daily supervisor for several master thesisses</description>
     </item>
     
     <item>
