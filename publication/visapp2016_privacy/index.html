@@ -76,7 +76,7 @@
   <meta property="og:site_name" content="Personal Website of Steven Puttemans">
   <meta property="og:url" content="http://stevenputtemans.github.io/publication/visapp2016_privacy/">
   <meta property="og:title" content="Safeguarding Privacy by Reliable Automatic Blurring of Faces in Mobile Mapping Images | Personal Website of Steven Puttemans">
-  <meta property="og:description" content="When capturing images in the wild containing pedestrians, privacy issues remain a concern for industrial applications. Our application, collecting cycloramic mobile mapping data in crowded environments, is an example of this. If the data is processed and accessed by third parties, privacy of individuals inside the data must be ensured. This is where pedestrian detectors come into play, used to detect individuals and make them privacy safe through blurring. However the problem of undesired false positive detections, typical for pedestrian detectors and unavoidable, still leaves undesired areas of the images being blurred. We tackled this problem by using application specific scene constraints, under the form of a scale-space mapping based on the pedestrian detector’s training data, combined with reducing the field of interest and a specific false positive elimination classifier. Furthermore we applied a technique called soft blurring to avoid the artificial look of simply applying a Gaussian blur to the found detections, which resulted in an effective full-automatic masking pipeline for privacy safeguarding in mobile mapping images. We prove that we can use pre-trained pedestrian detection models, but, based on a limited amount of application-specific annotations, we can boost the detection accuracy enormously by exploiting scene specific constraints.">
+  <meta property="og:description" content="When capturing images in the wild containing pedestrians, privacy issues remain a concern for industrial applications. Our application, collecting cycloramic mobile mapping data in crowded environments, is an example of this. If the data is processed and accessed by third parties, privacy of individuals inside the data must be ensured. This is where pedestrian detectors come into play, used to detect individuals and make them privacy safe through blurring. However the problem of undesired false positive detections, typical for pedestrian detectors and unavoidable, still leaves undesired areas of the images being blurred. We tackled this problem by using application specific scene constraints, under the form of a scale-space mapping based on the pedestrian detector’s training data, combined with reducing the field of interest and a specific false positive elimination classifier. Furthermore we applied a technique called soft blurring to avoid the artificial look of simply applying a Gaussian blur to the found detections, which resulted in an effective full-automatic masking pipeline for privacy safeguarding in mobile mapping images. We prove that we can use pre-trained pedestrian detection models, but, based on a limited amount of application-specific annotations, we can boost the detection accuracy enormously by exploiting scene specific constraints."><meta property="og:image" content="http://stevenputtemans.github.io/img/masking.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2016-02-27T16:39:24&#43;01:00">
@@ -241,6 +241,11 @@
 <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
   
+<div class="article-header">
+  <img src="/img/masking.png" class="article-banner" itemprop="image">
+  <span class="article-header-caption">Applying data learned rules for rejecting false detections.</span>
+</div>
+
 
 
   <div class="article-container">

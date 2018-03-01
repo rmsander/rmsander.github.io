@@ -76,7 +76,7 @@
   <meta property="og:site_name" content="Personal Website of Steven Puttemans">
   <meta property="og:url" content="http://stevenputtemans.github.io/publication/visapp2017_facedetect/">
   <meta property="og:title" content="Improving Open Source Face Detection by Combining an Adapted Cascade Classification Pipeline and Active Learning | Personal Website of Steven Puttemans">
-  <meta property="og:description" content="Recent advances in computer vision have almost solved the problem of in the wild face detection, using complex techniques like convolutional neural networks. On the contrary many open source computer vision frameworks like OpenCV have not yet made the switch to these complex techniques and tend to depend on well established algorithms for face detection, like the cascade classification pipeline suggested by Viola and Jones. However the accuracy of these open source face detection models on public datasets like FDDB stays rather low, mainly due to the relatively high number of false positive detections produced. We propose several adaptations to the current existing LBP/AdaBoost cascade classification pipeline of OpenCV. This is done by improving the training sample generation and annotation procedure, and by applying an active learning strategy. This boosts the accuracy of in the wild face detection on the FDDB dataset quite drastically, closing the gap towards the accuracy levels gained by state-of-the-art CNN-based face detectors. The proposed changes allow us to provide a new face detection model to the OpenCV framework, achieving a remarkably high precision at an acceptable recall rate, offering a model that ensures detected faces are actually faces, a critical requirement for further processing pipelines like person identification, etc.">
+  <meta property="og:description" content="Recent advances in computer vision have almost solved the problem of in the wild face detection, using complex techniques like convolutional neural networks. On the contrary many open source computer vision frameworks like OpenCV have not yet made the switch to these complex techniques and tend to depend on well established algorithms for face detection, like the cascade classification pipeline suggested by Viola and Jones. However the accuracy of these open source face detection models on public datasets like FDDB stays rather low, mainly due to the relatively high number of false positive detections produced. We propose several adaptations to the current existing LBP/AdaBoost cascade classification pipeline of OpenCV. This is done by improving the training sample generation and annotation procedure, and by applying an active learning strategy. This boosts the accuracy of in the wild face detection on the FDDB dataset quite drastically, closing the gap towards the accuracy levels gained by state-of-the-art CNN-based face detectors. The proposed changes allow us to provide a new face detection model to the OpenCV framework, achieving a remarkably high precision at an acceptable recall rate, offering a model that ensures detected faces are actually faces, a critical requirement for further processing pipelines like person identification, etc."><meta property="og:image" content="http://stevenputtemans.github.io/img/face_detection.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2017-08-28T16:39:24&#43;01:00">
@@ -241,6 +241,11 @@
 <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
   
+<div class="article-header">
+  <img src="/img/face_detection.png" class="article-banner" itemprop="image">
+  <span class="article-header-caption">Improving the Viola&amp;Jones based face detector integrated in OpenCV.</span>
+</div>
+
 
 
   <div class="article-container">
