@@ -12,5 +12,32 @@
 	<atom:link href="http://stevenputtemans.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Finale van de Wetenschapsbattle 2018</title>
+      <link>http://stevenputtemans.github.io/talk/sciencebattle_finals/</link>
+      <pubDate>Fri, 16 Mar 2018 09:00:00 +0100</pubDate>
+      
+      <guid>http://stevenputtemans.github.io/talk/sciencebattle_finals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wetenschapsbattle 2018 - Voorronde provincie Antwerpen</title>
+      <link>http://stevenputtemans.github.io/talk/sciencebattle_antwerp/</link>
+      <pubDate>Mon, 12 Mar 2018 09:00:00 +0100</pubDate>
+      
+      <guid>http://stevenputtemans.github.io/talk/sciencebattle_antwerp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning Workshop</title>
+      <link>http://stevenputtemans.github.io/talk/deeplearningworkshop/</link>
+      <pubDate>Wed, 10 May 2017 08:30:00 +0100</pubDate>
+      
+      <guid>http://stevenputtemans.github.io/talk/deeplearningworkshop/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
