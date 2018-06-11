@@ -11,6 +11,24 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Science Figured Out</title>
+      <link>http://stevenputtemans.github.io/talk/wetenschapuitgedokterd/</link>
+      <pubDate>Wed, 06 Jun 2018 09:00:00 +0100</pubDate>
+      
+      <guid>http://stevenputtemans.github.io/talk/wetenschapuitgedokterd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sound Of Science Festival</title>
+      <link>http://stevenputtemans.github.io/talk/soundofscience/</link>
+      <pubDate>Sun, 27 May 2018 09:00:00 +0100</pubDate>
+      
+      <guid>http://stevenputtemans.github.io/talk/soundofscience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title></title>
       <link>http://stevenputtemans.github.io/cv/cv/</link>
       <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
@@ -309,24 +327,6 @@ in a craniofacial reconstruction procedure.&lt;/p&gt;
       <pubDate>Tue, 03 Nov 2015 16:39:24 +0100</pubDate>
       
       <guid>http://stevenputtemans.github.io/publication/opencvblueprints/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Automated Walking Aid Detector Based on Indoor Video Recordings</title>
-      <link>http://stevenputtemans.github.io/publication/embc2015_walking/</link>
-      <pubDate>Sat, 15 Aug 2015 16:39:24 +0100</pubDate>
-      
-      <guid>http://stevenputtemans.github.io/publication/embc2015_walking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Visual Detection and Species Classification of Orchid Flowers</title>
-      <link>http://stevenputtemans.github.io/publication/mva2015_orchid/</link>
-      <pubDate>Tue, 12 May 2015 16:39:24 +0100</pubDate>
-      
-      <guid>http://stevenputtemans.github.io/publication/mva2015_orchid/</guid>
       <description></description>
     </item>
     
