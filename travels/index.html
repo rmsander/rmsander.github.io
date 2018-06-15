@@ -2,7 +2,7 @@
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-		<link href="http://stevenputtemans.github.io/jqvmap/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/> -->
+		<link href="http://stevenputtemans.github.io/jqvmap/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
 
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="http://stevenputtemans.github.io/jqvmap/dist/jquery.vmap.js"></script>
@@ -13,15 +13,18 @@
 		<script type="text/javascript">
 		jQuery(document).ready(function () {
 
-		    var enabledRegions = ['be', 'jp', 'fr', 'nl', 'se', 'il', 'gb', 'es'];
+		    var enabledRegions = ['be', 'nl', 'fr', 'de', 'es', 'pt', 'gb', 'ch', 'jp', 'th', 'it', 'fi', 'se', 'il', 'dk', 'cz', 'at']
 
 		    jQuery('#vmap').vectorMap({
+                        color: '#6ec6ff',
+                        borderColor: '#6ec6ff',
+			hoverColor: '#0095eb',
 			map: 'world_en',
-			enableZoom: true,
+			enableZoom: false,
 			showTooltip: true,
-			backgroundColor: '#333333',
-			selectedColor: '#96ff27',
-			hoverOpacity: 0.8,
+			backgroundColor: '#ffffff',
+			selectedColor: '#0069c0',
+			hoverOpacity: 0.5,
 			selectedRegions: enabledRegions,
 
 			onRegionClick: function(event, code, region){
@@ -32,7 +35,7 @@
 			    } else {
 				
 				event.preventDefault();
-		
+				
 			    }
 			},
 			onRegionSelect: function(event, code, region){
@@ -43,7 +46,7 @@
 		</script>
 	</head>
 
-	<body style="background-color: #333">
+	<body style="background-color: #ffffff">
 		<div id="vmap" style="width: 100%; height: 100%;"></div>
 	</body>
 </html>
