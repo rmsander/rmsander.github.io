@@ -59,10 +59,23 @@
   
 
   
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-120928140-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
 
   
-  <link rel="alternate" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website of Steven Puttemans">
-  <link rel="feed" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website of Steven Puttemans">
+  <link rel="alternate" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website">
+  <link rel="feed" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website">
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -76,9 +89,9 @@
   <meta property="twitter:site" content="@https://twitter.com/StevenPuttemans?lang=nl">
   <meta property="twitter:creator" content="@https://twitter.com/StevenPuttemans?lang=nl">
   
-  <meta property="og:site_name" content="Personal Website of Steven Puttemans">
+  <meta property="og:site_name" content="Personal Website">
   <meta property="og:url" content="http://stevenputtemans.github.io/publication/mva2015_orchid/">
-  <meta property="og:title" content="Visual Detection and Species Classification of Orchid Flowers | Personal Website of Steven Puttemans">
+  <meta property="og:title" content="Visual Detection and Species Classification of Orchid Flowers | Personal Website">
   <meta property="og:description" content="The goal of this research is to investigate the possibility of using object categorization and object classification techniques in an industrial context with a very limited set of training data. As an industrial application of the proposed techniques we investigate the case of orchid flower detection and orchid species classification in an orchid packaging plant. Due to their large variety of colors and patterns, these orchid flowers are very hard to detect with classic segmentation based techniques but form an ideal test case for object categorization techniques. Due to the limited amount of training data available, we aim at building a system with close to no false positive detections but guaranteeing that each orchid plant still returns a single flower detection. Subsequently the detected flowers are passed towards a classification system of linear binary SVM classifiers trained on visual characteristics of the flowers. To increase the classification success rate, we combined results of single flowers, using majority voting, to reach an orchid plant based classification. The complete pipeline is optimized by effectively using the industrial application specific knowledge of the setup. By implementing this approach we prove that industrial object categorization and classification with high accuracy is possible, even if only a small training dataset is available."><meta property="og:image" content="http://stevenputtemans.github.io/img/orchid.png">
   <meta property="og:locale" content="en-us">
   
@@ -89,7 +102,7 @@
 
   
 
-  <title>Visual Detection and Species Classification of Orchid Flowers | Personal Website of Steven Puttemans</title>
+  <title>Visual Detection and Species Classification of Orchid Flowers | Personal Website</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -108,7 +121,7 @@
         <span class="icon-bar"></span>
       </button>
       
-      <a class="navbar-brand" href="/">Personal Website of Steven Puttemans</a>
+      <a class="navbar-brand" href="/">Personal Website</a>
     </div>
 
     

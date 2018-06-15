@@ -59,10 +59,23 @@
   
 
   
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-120928140-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
 
   
-  <link rel="alternate" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website of Steven Puttemans">
-  <link rel="feed" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website of Steven Puttemans">
+  <link rel="alternate" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website">
+  <link rel="feed" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website">
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -76,9 +89,9 @@
   <meta property="twitter:site" content="@https://twitter.com/StevenPuttemans?lang=nl">
   <meta property="twitter:creator" content="@https://twitter.com/StevenPuttemans?lang=nl">
   
-  <meta property="og:site_name" content="Personal Website of Steven Puttemans">
+  <meta property="og:site_name" content="Personal Website">
   <meta property="og:url" content="http://stevenputtemans.github.io/publication/geobia2016_solarpanel/">
-  <meta property="og:title" content="Detection of photovoltaic installations in RGB aerial imaging: a comparative study | Personal Website of Steven Puttemans">
+  <meta property="og:title" content="Detection of photovoltaic installations in RGB aerial imaging: a comparative study | Personal Website">
   <meta property="og:description" content="In this work, we compare four different approaches for detecting photovoltaic installations from RGB aerial images. Our client, an electricity grid administrator, wants to hunt down fraud with unregistered illegal solar panel installations by detecting installations in aerial imagery and checking these against their database of registered installations. The detection of solar panels in these RGB images is a difficult task. Reasons are the relatively low resolution (at 25 cm/pixel an individual solar panel only measures about 9 × 7 pixels), the undiscriminating colour properties of the object (due to in-class variance and specular effects) and the apparent shape variability (rotation and skew due to the different roofs slant angles). Therefore, straightforward object segmentation techniques do not yield a satisfying solution, as proven in this paper. We compared four state-of-the-art object detection approaches for this task. First we experimented with a machine learning object detection technique based on pixel-based support vector machine classification. Secondly we developed an approach using MSER based colour segmentation and shape analysis. Finally a dual approach based on object categorization using the boosted cascade classifier technique of Viola &amp; Jones and the aggregate channel features technique of Doll ́ar et al., is introduced, learning a combination of colour and gradient feature based classifiers from a given training set. We successfully evaluate these four different approaches on a fully labelled test set of a 8000 × 8000 pixel, 4 square km zone containing 315 solar panel installations with in total more than 10.000 individual panels."><meta property="og:image" content="http://stevenputtemans.github.io/img/solar_panels.png">
   <meta property="og:locale" content="en-us">
   
@@ -89,7 +102,7 @@
 
   
 
-  <title>Detection of photovoltaic installations in RGB aerial imaging: a comparative study | Personal Website of Steven Puttemans</title>
+  <title>Detection of photovoltaic installations in RGB aerial imaging: a comparative study | Personal Website</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -108,7 +121,7 @@
         <span class="icon-bar"></span>
       </button>
       
-      <a class="navbar-brand" href="/">Personal Website of Steven Puttemans</a>
+      <a class="navbar-brand" href="/">Personal Website</a>
     </div>
 
     

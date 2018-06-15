@@ -59,10 +59,23 @@
   
 
   
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-120928140-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
 
   
-  <link rel="alternate" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website of Steven Puttemans">
-  <link rel="feed" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website of Steven Puttemans">
+  <link rel="alternate" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website">
+  <link rel="feed" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website">
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -76,9 +89,9 @@
   <meta property="twitter:site" content="@https://twitter.com/StevenPuttemans?lang=nl">
   <meta property="twitter:creator" content="@https://twitter.com/StevenPuttemans?lang=nl">
   
-  <meta property="og:site_name" content="Personal Website of Steven Puttemans">
+  <meta property="og:site_name" content="Personal Website">
   <meta property="og:url" content="http://stevenputtemans.github.io/publication/visapp2016_privacy/">
-  <meta property="og:title" content="Safeguarding Privacy by Reliable Automatic Blurring of Faces in Mobile Mapping Images | Personal Website of Steven Puttemans">
+  <meta property="og:title" content="Safeguarding Privacy by Reliable Automatic Blurring of Faces in Mobile Mapping Images | Personal Website">
   <meta property="og:description" content="When capturing images in the wild containing pedestrians, privacy issues remain a concern for industrial applications. Our application, collecting cycloramic mobile mapping data in crowded environments, is an example of this. If the data is processed and accessed by third parties, privacy of individuals inside the data must be ensured. This is where pedestrian detectors come into play, used to detect individuals and make them privacy safe through blurring. However the problem of undesired false positive detections, typical for pedestrian detectors and unavoidable, still leaves undesired areas of the images being blurred. We tackled this problem by using application specific scene constraints, under the form of a scale-space mapping based on the pedestrian detector’s training data, combined with reducing the field of interest and a specific false positive elimination classifier. Furthermore we applied a technique called soft blurring to avoid the artificial look of simply applying a Gaussian blur to the found detections, which resulted in an effective full-automatic masking pipeline for privacy safeguarding in mobile mapping images. We prove that we can use pre-trained pedestrian detection models, but, based on a limited amount of application-specific annotations, we can boost the detection accuracy enormously by exploiting scene specific constraints."><meta property="og:image" content="http://stevenputtemans.github.io/img/masking.png">
   <meta property="og:locale" content="en-us">
   
@@ -89,7 +102,7 @@
 
   
 
-  <title>Safeguarding Privacy by Reliable Automatic Blurring of Faces in Mobile Mapping Images | Personal Website of Steven Puttemans</title>
+  <title>Safeguarding Privacy by Reliable Automatic Blurring of Faces in Mobile Mapping Images | Personal Website</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -108,7 +121,7 @@
         <span class="icon-bar"></span>
       </button>
       
-      <a class="navbar-brand" href="/">Personal Website of Steven Puttemans</a>
+      <a class="navbar-brand" href="/">Personal Website</a>
     </div>
 
     

@@ -59,10 +59,23 @@
   
 
   
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-120928140-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
 
   
-  <link rel="alternate" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website of Steven Puttemans">
-  <link rel="feed" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website of Steven Puttemans">
+  <link rel="alternate" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website">
+  <link rel="feed" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website">
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -76,9 +89,9 @@
   <meta property="twitter:site" content="@https://twitter.com/StevenPuttemans?lang=nl">
   <meta property="twitter:creator" content="@https://twitter.com/StevenPuttemans?lang=nl">
   
-  <meta property="og:site_name" content="Personal Website of Steven Puttemans">
+  <meta property="og:site_name" content="Personal Website">
   <meta property="og:url" content="http://stevenputtemans.github.io/publication/visapp2017_facedetect/">
-  <meta property="og:title" content="Improving Open Source Face Detection by Combining an Adapted Cascade Classification Pipeline and Active Learning | Personal Website of Steven Puttemans">
+  <meta property="og:title" content="Improving Open Source Face Detection by Combining an Adapted Cascade Classification Pipeline and Active Learning | Personal Website">
   <meta property="og:description" content="Recent advances in computer vision have almost solved the problem of in the wild face detection, using complex techniques like convolutional neural networks. On the contrary many open source computer vision frameworks like OpenCV have not yet made the switch to these complex techniques and tend to depend on well established algorithms for face detection, like the cascade classification pipeline suggested by Viola and Jones. However the accuracy of these open source face detection models on public datasets like FDDB stays rather low, mainly due to the relatively high number of false positive detections produced. We propose several adaptations to the current existing LBP/AdaBoost cascade classification pipeline of OpenCV. This is done by improving the training sample generation and annotation procedure, and by applying an active learning strategy. This boosts the accuracy of in the wild face detection on the FDDB dataset quite drastically, closing the gap towards the accuracy levels gained by state-of-the-art CNN-based face detectors. The proposed changes allow us to provide a new face detection model to the OpenCV framework, achieving a remarkably high precision at an acceptable recall rate, offering a model that ensures detected faces are actually faces, a critical requirement for further processing pipelines like person identification, etc."><meta property="og:image" content="http://stevenputtemans.github.io/img/face_detection.png">
   <meta property="og:locale" content="en-us">
   
@@ -89,7 +102,7 @@
 
   
 
-  <title>Improving Open Source Face Detection by Combining an Adapted Cascade Classification Pipeline and Active Learning | Personal Website of Steven Puttemans</title>
+  <title>Improving Open Source Face Detection by Combining an Adapted Cascade Classification Pipeline and Active Learning | Personal Website</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -108,7 +121,7 @@
         <span class="icon-bar"></span>
       </button>
       
-      <a class="navbar-brand" href="/">Personal Website of Steven Puttemans</a>
+      <a class="navbar-brand" href="/">Personal Website</a>
     </div>
 
     

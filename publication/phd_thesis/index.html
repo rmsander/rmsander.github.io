@@ -59,10 +59,23 @@
   
 
   
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-120928140-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
 
   
-  <link rel="alternate" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website of Steven Puttemans">
-  <link rel="feed" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website of Steven Puttemans">
+  <link rel="alternate" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website">
+  <link rel="feed" href="http://stevenputtemans.github.io/index.xml" type="application/rss+xml" title="Personal Website">
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -76,9 +89,9 @@
   <meta property="twitter:site" content="@https://twitter.com/StevenPuttemans?lang=nl">
   <meta property="twitter:creator" content="@https://twitter.com/StevenPuttemans?lang=nl">
   
-  <meta property="og:site_name" content="Personal Website of Steven Puttemans">
+  <meta property="og:site_name" content="Personal Website">
   <meta property="og:url" content="http://stevenputtemans.github.io/publication/phd_thesis/">
-  <meta property="og:title" content="Exploiting scene constraints to improve object detection algorithms for industrial applications | Personal Website of Steven Puttemans">
+  <meta property="og:title" content="Exploiting scene constraints to improve object detection algorithms for industrial applications | Personal Website">
   <meta property="og:description" content="State-of-the-art object detection algorithms are designed to be heavily robust against scene and object variations like illumination changes, occlusions, scale changes, orientation differences, background clutter and object intra-class variability. However, in industrial machine vision applications, where objects with variable appearance have to be detected, many of these variations are in fact constant and can be seen as scene specific constraints on the detection problem. These scene constraints can be used to reduce the enormous search space for object candidates, and thus speed up the actual detection process and improve it’s accuracy. In this PhD we will explore the possibility to use scene specific constraints of industrial object detection tasks to influence three main aspects of object detection algorithms: 1. Reduce the amount of training data needed. We will try to reduce the required amount of manually annotated training data as much as possible. | 2. Increase the speed of the detection process. Since we are working in an industrial application related context, maintaining real-time performance is a hard constraint. | 3. Reduce the amount of false positive and false negative detections. We aim at building object detection algorithms that are able to detect all objects in a given image or video stream with a high certainty. Moreover, we will propose steps to simplify the training process under such scene constraints, used for creating object specific models. For this we look into techniques like active learning and data augmentation, in order to heavily reduce the amount of manual input required by the algorithm.">
   <meta property="og:locale" content="en-us">
   
@@ -89,7 +102,7 @@
 
   
 
-  <title>Exploiting scene constraints to improve object detection algorithms for industrial applications | Personal Website of Steven Puttemans</title>
+  <title>Exploiting scene constraints to improve object detection algorithms for industrial applications | Personal Website</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -108,7 +121,7 @@
         <span class="icon-bar"></span>
       </button>
       
-      <a class="navbar-brand" href="/">Personal Website of Steven Puttemans</a>
+      <a class="navbar-brand" href="/">Personal Website</a>
     </div>
 
     
