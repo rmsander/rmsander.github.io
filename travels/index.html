@@ -275,56 +275,18 @@
 
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-<link href="http://stevenputtemans.github.io/jqvmap/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="http://stevenputtemans.github.io/jqvmap/dist/jquery.vmap.min.js"></script>
-<script type="text/javascript" src="http://stevenputtemans.github.io/jqvmap/dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
-
 <script type="text/javascript">
 $(window).ready(function () {
-
-    var enabledRegions = ['be', 'nl', 'fr', 'de', 'es', 'pt', 'gb', 'ch', 'jp', 'th', 'it', 'fi', 'se', 'il', 'dk', 'cz', 'at'];
-
     console.log($('#vmap').width());
     $('#vmap-iframe').attr('height', $(document).height()*0.65);
     $(window).resize(function(){
         $('#vmap-iframe').attr('height', $(document).height()*0.65);
     });
-
-
-    $('#vmap').vectorMap({
-        color: '#6ec6ff',
-        borderColor: '#6ec6ff',
-	hoverColor: '#0095eb',
-	map: 'world_en',
-	enableZoom: false,
-	showTooltip: true,
-	backgroundColor: '#ffffff',
-	selectedColor: '#0069c0',
-	hoverOpacity: 0.5,
-	selectedRegions: enabledRegions,
-
-	onRegionClick: function(event, code, region){
-	    
-	    if(enabledRegions.indexOf(code) === -1){
-		
-		event.preventDefault();
-	    } else {
-		
-		event.preventDefault();
-		
-	    }
-	},
-	onRegionSelect: function(event, code, region){
-	    console.log(map.selectedRegions);
-	}
-    });
 });
 </script>
 
 <div id="vmap" style="width: 100%; height: 100%;">
-    <iframe id="vmap-iframe" style="width: 100%; border:none;"  src="http://stevenputtemans.github.io/travels/"></iframe>
+    <iframe id="vmap-iframe" style="width: 100%; border:none;"  src="http://stevenputtemans.github.io/tmap.html"></iframe>
 </div>
 
 
