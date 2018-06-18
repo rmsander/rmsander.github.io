@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <link href="jqvmap/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="jqvmap/dist/jquery.vmap.js"></script>
+    <script type="text/javascript" src="jqvmap/dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+
+            var enabledRegions = ['be', 'nl', 'fr', 'de', 'es', 'pt', 'gb', 'ch', 'jp', 'th', 'it', 'fi', 'se', 'il', 'dk', 'cz', 'at'];
+
+            jQuery('#vmap').vectorMap({
+                color: '#6ec6ff',
+		borderColor: '#6ec6ff',
+		hoverColor: '#0095eb',
+		map: 'world_en',
+		enableZoom: false,
+		showTooltip: true,
+		backgroundColor: '#ffffff',
+		selectedColor: '#0069c0',
+		hoverOpacity: 0.5,
+		selectedRegions: enabledRegions,
+
+                onRegionClick: function(event, code, region){
+                    // Check if this is an Enabled Region, and not the current selected on
+                    if(enabledRegions.indexOf(code) === -1){
+                        // Not an Enabled Region
+                        event.preventDefault();
+                    } else {
+                        // Enabled Region. Update Newly Selected Region.
+                        event.preventDefault();
+//                        alert('Clicked')
+                    }
+                },
+                onRegionSelect: function(event, code, region){
+                    console.log(map.selectedRegions);
+                }
+            });
+        });
+    </script>
+  </head>
+  <body style="background-color: #ffffff">
+    <div id="vmap" style="width: 100%; height: 100%;"></div>
+  </body>
+</html>
