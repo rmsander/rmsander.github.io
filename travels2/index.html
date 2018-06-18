@@ -291,53 +291,53 @@
 </nav>
 
 
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-	<link href="http://stevenputtemans.github.io/jqvmap/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/> -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="http://stevenputtemans.github.io/jqvmap/dist/jquery.vmap.js"></script>
-	<script type="text/javascript" src="http://stevenputtemans.github.io/jqvmap/dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
-	
-	<link rel="stylesheet" href="http://stevenputtemans.github.io/css/travelmap.css">
+<link href="http://stevenputtemans.github.io/jqvmap/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
 
-	<script type="text/javascript">
-	jQuery(document).ready(function () {
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://stevenputtemans.github.io/jqvmap/dist/jquery.vmap.js"></script>
+<script type="text/javascript" src="http://stevenputtemans.github.io/jqvmap/dist/maps/jquery.vmap.world.js" charset="utf-8"></script>
 
-	    var enabledRegions = ['be', 'jp', 'fr', 'nl', 'se', 'il', 'gb', 'es'];
+<link rel="stylesheet" href="http://stevenputtemans.github.io/css/travelmap.css">
 
-	    jQuery('#vmap').vectorMap({
-		map: 'world_en',
-		enableZoom: true,
-		showTooltip: true,
-		backgroundColor: '#333333',
-		selectedColor: '#96ff27',
-		hoverOpacity: 0.8,
-		selectedRegions: enabledRegions,
+<script type="text/javascript">
+jQuery(document).ready(function () {
 
-		onRegionClick: function(event, code, region){
-		    
-		    if(enabledRegions.indexOf(code) === -1){
-			
-			event.preventDefault();
-		    } else {
-			
-			event.preventDefault();
-	
-		    }
-		},
-		onRegionSelect: function(event, code, region){
-		    console.log(map.selectedRegions);
-		}
-	    });
-	});
-	</script>
-</head>
+    var enabledRegions = ['be', 'jp', 'fr', 'nl', 'se', 'il', 'gb', 'es'];
 
-<body style="background-color: #333">
-	<div id="vmap" style="width: 100%; height: 100%;"></div>
-</body>
+    jQuery('#vmap').vectorMap({
+	map: 'world_en',
+	enableZoom: true,
+	showTooltip: true,
+	backgroundColor: '#333333',
+	selectedColor: '#96ff27',
+	hoverOpacity: 0.8,
+	selectedRegions: enabledRegions,
+
+	onRegionClick: function(event, code, region){
+	    
+	    if(enabledRegions.indexOf(code) === -1){
+		
+		event.preventDefault();
+	    } else {
+		
+		event.preventDefault();
+
+	    }
+	},
+	onRegionSelect: function(event, code, region){
+	    console.log(map.selectedRegions);
+	}
+    });
+});
+</script>
+
+
+<div id="vmap" style="width: 100%; height: 100%;"></div>
+
+
 
 
 <footer class="site-footer">
