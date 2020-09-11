@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Personal Website</title>
+    <link>http://stevenputtemans.github.io/home/</link>
+    <description>Recent content in Homes on Personal Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Steven Puttemans, 2018</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://stevenputtemans.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://stevenputtemans.github.io/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://stevenputtemans.github.io/home/about/</guid>
+      <description>Biography Steven Puttemans is working as a post-doctoral researcher at EAVISE research group, which is part of the KU Leuven, Department of Industrial Engineering Sciences. He mainly focusses on bridging the valley-of-death, by translating state-of-the-art artificially intelligent computer vision algorithms, developed in academic context, to practical and usable solutions for industrial challenges. Steven is an active participant in the OpenCV community, being one of the main Q&amp;amp;A moderators and a frequent supplier of bug fixes and improvements to the framework.</description>
+    </item>
+    
+    <item>
+      <title>Selected Publications</title>
+      <link>http://stevenputtemans.github.io/home/publications_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>http://stevenputtemans.github.io/home/publications_selected/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>http://stevenputtemans.github.io/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>http://stevenputtemans.github.io/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>http://stevenputtemans.github.io/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://stevenputtemans.github.io/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>http://stevenputtemans.github.io/home/teaching/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://stevenputtemans.github.io/home/teaching/</guid>
+      <description>Academic courses   Research methodologies | 2018 - now
+    Scientific seminars | 2017 - now
+List of seminars: https://iiw.kuleuven.be/onderzoek/eavise/seminars
+    Computer vision hands-on labs using the OpenCV framework | 2015 - now
+    Scientific project for second year students | 2014 - 2017
+Marker based augmented reality | 2017 &amp; 2016
+Mini-me in 3D (creating + printing 3D models of students) | 2016</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://stevenputtemans.github.io/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://stevenputtemans.github.io/home/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
