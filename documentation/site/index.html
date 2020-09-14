@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My CS/AI Quick Reference Guide</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">My CS/AI Quick Reference Guide</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="about/" class="nav-link">About</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="about/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            
+            
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h3 id="overview">Overview</h3>
+<h5 id="ryan-sander-graduate-student-mit"><a href="https://rmsander.github.io">Ryan Sander</a>, Graduate Student @ MIT</h5>
+<p>This guide serves to provide users with efficient access to a variety of different concepts and practical problem/solution discussions in the fields of:</p>
+<ul>
+<li>Computer Science &amp; Programming</li>
+<li>Electrical Engineering</li>
+<li>Economics</li>
+<li>Mathematics</li>
+<li>Leadership</li>
+<li>Writing</li>
+</ul>
+<p>If you would like to learn more about (a growing list of) these concepts in-depth or would like to practice them, please check out my GitHub repository here.  This guide is by no means complete and is routinely updated.  My hope is that in its current state, this guide provides you with valuable insight into concepts and implementations for your projects in the aforementioned fields.</p>
+<p><strong>WARNING</strong>: This guide is not intended for commercial use, and should not be redistributed for profit.  I have made efforts to make citations where they are due, but a few may still be missing.</p>
+<p><strong>NOTE</strong>: This website is currently under construction, but more content will be coming soon :) </p>
+<h3 id="technical-tools-guide">Technical Tools Guide</h3>
+<p>The first section of this guide is designed to provide users with access to pertinent information, usage guides, and bug resolutions for a variety of different technical tools.</p>
+<ul>
+<li>
+<p>Operating Systems:</p>
+<ul>
+<li>Linux:<ul>
+<li>Ubuntu (16.04/18.04)</li>
+<li>RHEL/CentOS</li>
+</ul>
+</li>
+<li>Windows (more coming soon)</li>
+<li>ROS</li>
+</ul>
+</li>
+<li>
+<p>Python:</p>
+<ul>
+<li>
+<p>Native Python:</p>
+<ul>
+<li><code>os</code> (operating system)</li>
+<li><code>argparse</code> (argument parsing)</li>
+<li><code>re</code> (regular expressions)</li>
+<li><code>json</code> (create/process json files)</li>
+<li><code>tarball</code> (create/process tarball files)</li>
+<li><code>h5py</code> (create/process h5 files)</li>
+</ul>
+</li>
+<li>
+<p><code>TensorFlow</code> (Deep Learning + Numerical Computing):</p>
+<ul>
+<li><code>TensorFlow</code></li>
+<li><code>TensorBoard</code> (plotting)</li>
+<li><code>Keras</code> (high-level TensorFlow API)</li>
+<li><code>TensorFlow-Agents</code> (Reinforcement Learning in TensorFlow)</li>
+</ul>
+</li>
+<li>
+<p><code>PyTorch</code> (Deep Learning + Numerical Computing):</p>
+<ul>
+<li><code>PyTorch</code></li>
+<li><code>TensorBoard</code> (plotting)</li>
+<li><code>Torchvision</code> (Computer Vision with PyTorch)</li>
+<li><code>Points3D</code> (coming soon - 3D Computer Vision in PyTorch)</li>
+</ul>
+</li>
+<li>
+<p><code>OpenCV</code> (Computer Vision)</p>
+</li>
+<li><code>NumPy</code> (Numerical Programming Package)</li>
+<li><code>Xvfb</code> (Headless rendering)</li>
+<li><code>OpenAI Gym</code> (Reinforcement Learning Simulations)<ul>
+<li>car-racing</li>
+<li>Vizdoom</li>
+</ul>
+</li>
+<li><code>Matplotlib</code> (Matlab-based plotting functions)</li>
+<li><code>Pyglet</code> (Graphics, animations, and applications)</li>
+<li><code>Pandas</code> (Data Analysis, Processing, and Manipulation)</li>
+<li><code>SciPy</code> (Scientific Programming Functions)</li>
+<li><code>Scikit-Learn</code>  (Supervised and unsupervised machine learning)</li>
+<li><code>Rospy</code> (coming soon)</li>
+</ul>
+</li>
+<li>
+<p>General Programming Practices</p>
+</li>
+<li>
+<p>Miscellaneous</p>
+<ul>
+<li>Pomegranate</li>
+<li>Librosa</li>
+<li>pymed (coming soon)</li>
+<li>Shrink PDFs with command-line (coming soon)</li>
+</ul>
+</li>
+<li>
+<p>Performance Engineering:</p>
+<ul>
+<li>C++<ul>
+<li>Overview of C++</li>
+<li>Roscpp (more coming soon)</li>
+</ul>
+</li>
+<li>Performance Optimization for Machine Learning</li>
+</ul>
+</li>
+<li>
+<p>IDEs:</p>
+<ul>
+<li>PyCharm</li>
+<li>Vim</li>
+</ul>
+</li>
+<li>
+<p>Interpreters:</p>
+<ul>
+<li>Bash (coming soon)</li>
+<li>Jupyter/Jupytext</li>
+</ul>
+</li>
+<li>
+<p>Scientific Computing:</p>
+<ul>
+<li>Matlab</li>
+<li>Stata</li>
+<li>R (coming soon)
+ *Julia<ul>
+<li>Native Julia</li>
+<li>Gen (probabilistic programming)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Web Development:</p>
+<ul>
+<li>HTML (coming soon)</li>
+<li>Server Side Includes (SSI)</li>
+<li>SSL Keys</li>
+<li>Nginx</li>
+<li>JavaScript</li>
+<li>NodeJS</li>
+<li>Node Package Manager (npm)</li>
+<li>PostGreSQL</li>
+<li>Online Tools:<ul>
+<li>Digital Ocean</li>
+<li>Wix</li>
+<li>SquareSpace</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Cloud Computing and Containerization:</p>
+<ul>
+<li>Cloud Services:<ul>
+<li>Amazon Web Services (AWS)</li>
+<li>Elastic Compute Cloud (EC2)</li>
+<li><code>Boto3</code> (Python EC2 API)</li>
+<li>S3</li>
+<li><code>awscli</code> (AWS command-line interface)</li>
+<li>Google Cloud Compute (GC2)</li>
+<li>Microsoft Azure (coming soon)</li>
+<li>MIT Satori (coming soon)</li>
+<li>MIT SuperCloud</li>
+<li>Docker</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Other Tools:</p>
+<ul>
+<li>Google Suite (Drive, Chrome)</li>
+<li>LaTeX</li>
+<li>GitHub</li>
+<li>Automated Emails (using Python) GitHub repository</li>
+<li>PowerPoint Labs (coming soon)</li>
+<li>Google Drive</li>
+</ul>
+</li>
+<li>
+<p>Remote tools (coming soon):</p>
+<ul>
+<li>Zoom (coming soon)</li>
+<li>AWW (whiteboard app) (coming soon)</li>
+<li>Anydesk (coming soon)</li>
+<li>Cocalc (coming soon) - link</li>
+<li>WebEx (coming soon)</li>
+<li>Skype (coming soon)</li>
+<li>Google Colab (coming soon)</li>
+<li>PuTTy (coming soon)</li>
+</ul>
+</li>
+</ul>
+<h3 id="technical-concepts-guide">Technical Concepts Guide</h3>
+<p>Additionally, the latter component of this guide is meant to serve as a high-level resource/guide to concepts in: </p>
+<ul>
+<li>
+<p>Artificial intelligence:</p>
+<ul>
+<li>Machine Learning</li>
+<li>Types of Learning:<ul>
+<li>Supervised Learning</li>
+<li>Unsupervised Learning</li>
+</ul>
+</li>
+<li>Neural Networks:</li>
+<li>General PyTorch Supervised Neural Network Training Process</li>
+<li>Computer Vision PyTorch Supervised Neural Network Training Process</li>
+<li>Deep generative Models - GANs + VAE</li>
+<li>Temporal Convolution Networks</li>
+<li>Machine Learning Domains:<ul>
+<li>Computer Vision</li>
+<li>Reinforcement Learning</li>
+<li>Natural Language Processing</li>
+</ul>
+</li>
+<li>
+<p>Feature Engineering</p>
+</li>
+<li>
+<p>General AI:</p>
+<ul>
+<li>Adversarial Search</li>
+<li>Game Theory</li>
+<li>Constraint Satisfaction Problems (CSPs)</li>
+</ul>
+</li>
+<li>
+<p>Embodied Intelligence</p>
+<ul>
+<li>Robotics:<ul>
+<li>Search Algorithms</li>
+<li>Particle Filtering</li>
+<li>SLAM</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>*Probabilistic Inference:
+    * Bayesian and Probabilistic Algorithms
+    * Inference: ADVI, MCMC, GPs, Bayesian Optimization
+    * Probabilistic Programming (using <code>Gen</code>)</p>
+</li>
+<li>
+<p>Mathematics:</p>
+<ul>
+<li>Real analysis </li>
+<li>Fourier Analysis</li>
+<li>Linear Algebra (coming soon)</li>
+<li>Multivariable Calculus (coming soon)</li>
+<li>Differential Equations (coming soon)</li>
+</ul>
+</li>
+<li>
+<p>Computer Science:</p>
+<ul>
+<li>Algorithms and data structures</li>
+<li>Software construction (coming soon)</li>
+<li>Computer graphics (coming soon)</li>
+</ul>
+</li>
+<li>
+<p>Signal Processing:</p>
+<ul>
+<li>Deterministic and stochastic signal processing</li>
+<li>Filtering</li>
+<li>Fourier, Laplace, and Z-Transforms</li>
+<li>Electromagnetics (coming soon)</li>
+</ul>
+</li>
+<li>
+<p>Economics:</p>
+<ul>
+<li>Econometrics:<ul>
+<li>Regression Techniques</li>
+<li>Inference</li>
+<li>Tests</li>
+<li>Data Types/Datasets in Econometrics</li>
+<li>Time Series Analysis</li>
+</ul>
+</li>
+<li>Microeconomics</li>
+</ul>
+</li>
+<li>
+<p>Research, Management, and Operations:</p>
+<ul>
+<li>General topics in research</li>
+<li>Neural Network Diagram tool</li>
+<li>Peer Review techniques (coming soon)<ul>
+<li>Computer Science</li>
+<li>Real Analysis</li>
+</ul>
+</li>
+<li>Leadership (coming soon)</li>
+<li>Project Engineering</li>
+<li>System Dynamics and Systems Thinking</li>
+<li>DevOps</li>
+<li>Research Papers (for machine learning)</li>
+<li>Datasets (for machine learning)</li>
+</ul>
+</li>
+<li>
+<p>Other Topics:</p>
+<ul>
+<li>Giving Feedback</li>
+<li>Diversity and Inclusion</li>
+<li>“The Art of the Career”</li>
+</ul>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.1.2
+Build Date UTC : 2020-09-14 00:25:38.803514+00:00
+-->
