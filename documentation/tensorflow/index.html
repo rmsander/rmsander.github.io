@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Tensorflow - My CS/AI Quick Reference Guide</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My CS/AI Quick Reference Guide</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../about/" class="nav-link">About</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Tensorflow</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../about/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#create-train-and-evaluation-policy-savers" class="nav-link">Create train and evaluation policy savers</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<!-- Copy and paste the converted output. -->
+
+<!-----
+NEW: Check the "Suppress top comment" option to remove this info from the output.
+
+Conversion time: 1.583 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β29
+* Sun Sep 13 2020 18:24:32 GMT-0700 (PDT)
+* Source doc: TensorFlow: tf, tensorboard, tf_agents, and keras
+----->
+
+<p><strong>TensorFlow (tf, tensorboard, tf_agents, and keras): Some Notes</strong></p>
+<p>This page is designed to give the reader a quick introduction to some concepts and ideas with:</p>
+<ul>
+<li><strong>TensorFlow</strong>, a deep learning library used primarily for creating neural networks and numerical processing pipelines at scale.  </li>
+<li><strong>TensorFlow-Agents</strong>, a Reinforcement Learning framework based on TensorFlow.</li>
+<li><strong>Tensorboard</strong>, a popular plotting and visualization framework that is highly amenable for integration with TensorFlow and PyTorch.  </li>
+<li><strong>Keras</strong>, a high-level API used for creating, training, validating, and deploying models based in TensorFlow.</li>
+</ul>
+<p>This page is by no means exhaustive and will be added to in time.</p>
+<p><strong>TensorFlow:</strong></p>
+<ul>
+<li>Library for creating Python-based neural networks for both prototyping and production.  Has a user-friendly front-end API (Keras), as well as many optimization capabilities that can be leveraged for large-scale production.</li>
+<li>Import convention: <strong>import tensorflow as tf</strong></li>
+<li>Key is computation graph<ul>
+<li>Nodes represent operations</li>
+<li>Edges represent tensors flowing from operation to operation</li>
+</ul>
+</li>
+<li>Key data structure is tf.tensor<ul>
+<li>All immutable, except for <strong>tf.variable</strong></li>
+</ul>
+</li>
+<li>Models, layers, and losses are fully customizable<ul>
+<li>Make sure to build by calling on valid-dimensional input</li>
+</ul>
+</li>
+<li>tf.eager execution:<ul>
+<li>Have to enable manually in tensorflow 1</li>
+<li>Automatic in tensorflow 2</li>
+</ul>
+</li>
+<li>1.14 by default installs cpu</li>
+<li>1.15 and up by default installs gpu</li>
+<li>Tf-agents requires 1.14+</li>
+<li>Installations for GPU and CPU are now separate</li>
+<li>Useful functions:<ul>
+<li><strong>tf.cast </strong>- changes the data type of a tensor</li>
+</ul>
+</li>
+<li>To get GPU devices on TensorFlow (source):<pre><code>**from tensorflow.python_client import device_lib**
+
+**def get_available_gpus():**
+</code></pre>
+</li>
+</ul>
+<p><strong>          local_device_protos = device_lbi.list_local_devices()</strong></p>
+<p><strong>          return [x.name for x in local_device_protos if x.device_type == ‘GPU’]</strong></p>
+<ul>
+<li>To use devices with tf:<pre><code>**with tf.get_device(‘/gpu:0’):**
+</code></pre>
+</li>
+</ul>
+<p><strong>          &lt; code to run on GPU&gt;</strong></p>
+<pre><code>    **with tf.get_device(‘/cpu:0’):**
+</code></pre>
+<p><strong>          &lt; code to run on CPU&gt;</strong></p>
+<ul>
+<li>To track gradients of quantities, we can use <strong>tf.GradientTape </strong>(<a href="https://www.tensorflow.org/api_docs/python/tf/GradientTape">source</a>)<strong>.  </strong>This object:<ul>
+<li>Records operations for automatic differentiation.</li>
+<li>Operations are recorded if they are executed within the gradient tape context manager and at least one of their inputs is being watched.</li>
+<li>
+<p>Trainable variables are automatically watched.  Tensors can manually be watched by invoking the <strong>watch </strong>method on this context manager.  For example:</p>
+<p><strong>x = tf.constant(3)</strong></p>
+<p><strong>with tf.GradientTape() as tape:</strong></p>
+<p><strong>  tape.watch(x)</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>          y = x * x</strong></p>
+<p><strong>      dy_dx = tape.gradient(y, x)  </strong># Outputs 6.0</p>
+<pre><code>*   This can also be used to compute higher-order derivatives:
+
+    **x = tf.constant(3)**
+
+
+    **with tf.GradientTape() as g:**
+
+
+    **  with tf.GradientTape() as gg:**
+
+
+    **      tape.watch(x)**
+</code></pre>
+<p><strong>              y = x * x</strong></p>
+<p><strong>          dy_dx = tape.gradient(y, x)  </strong># Outputs 6.0</p>
+<p><strong>      d2y_dx2 = tape.gradient(dy_dx, x) </strong> # Outputs 2.0</p>
+<p><strong>Build TensorFlow from Source:</strong></p>
+<ul>
+<li>Requires <strong>hazel</strong>, a package building tool like <strong>make </strong>and <strong>cmake</strong><ul>
+<li><strong><a href="https://docs.bazel.build/versions/master/install-ubuntu.html#install-on-ubuntu">Ubuntu installation</a></strong></li>
+</ul>
+</li>
+<li>To run <strong>hazel build</strong>, you need a <strong>WORKSPACE </strong>file.  Can simply do <strong>touch WORKSPACE </strong>if needed (<a href="https://github.com/bazelbuild/bazel/issues/2333">source</a>)<ul>
+<li>To run <strong>hazel build </strong>inside the tensorflow directory</li>
+</ul>
+</li>
+<li>Bazel build command-line arguments (<a href="https://docs.bazel.build/versions/master/user-manual.html">source</a>):<ul>
+<li><strong>--noincompatible_do_not_split_linking_cmdline</strong></li>
+<li><strong>--cxxopt</strong> flag used to pass commands to C++ compiler</li>
+<li><strong>-copt </strong>flag used to pass commands to C/objC compiler</li>
+</ul>
+</li>
+</ul>
+<p><strong>TensorFlow Profiling:</strong></p>
+<ul>
+<li>New with version <strong>tf &gt;= 2.2</strong></li>
+<li>Enables you to view the timing of each operation on multiple devices</li>
+<li>Visualized through <strong>tensorboard</strong></li>
+</ul>
+<p><strong>TensorBoard:</strong></p>
+<ul>
+<li>High level: Tool for providing measurements/visualizations needed during the ML workflow</li>
+<li>Capable of visualizing different data types, such as:<ul>
+<li>Scalars - Loss and evaluation metrics</li>
+<li>Graphs - Visualize data</li>
+<li>Distributions/histograms - Show tensor distributions over time</li>
+<li>Images - For applications such as Model Predictive Control in Reinforcement Learning</li>
+</ul>
+</li>
+<li>
+<p>General notes:</p>
+<ul>
+<li>
+<p>To load in a Python notebook: </p>
+<p><strong>%load_ext tensorboard</strong></p>
+</li>
+<li>
+<p>To reload in a Python notebook: </p>
+<p><strong>%reload_ext tensorboard</strong></p>
+</li>
+<li>
+<p>Clear logs from previous runs</p>
+<p><strong>! rm -rf ./logs</strong></p>
+</li>
+<li>
+<p>Create a datetime-based log directory:</p>
+<p><strong>log_dir = “logs” + time.datetime.now().strftime(“%Y%m%d-%H%M%S”)</strong></p>
+</li>
+<li>
+<p>To launch tensorboard on the command line:</p>
+<p><strong>&gt; tensorboard --logdir &lt;log/directory&gt; --port &lt;port_number; default is 6006&gt;</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>      </strong>&gt; Navigate to <strong>localhost:6006</strong> </p>
+<pre><code>(or a different port if that’s what the number you entered)
+</code></pre>
+<ul>
+<li>General logging process:<ul>
+<li>Create a tensorboard callback or summary writer</li>
+<li>Specify the log directory in the appropriate logging function</li>
+<li>Log in training, either using a callback function or by explicitly writing losses, metrics, images, histograms/distributions, or other data types to disk</li>
+</ul>
+</li>
+<li>
+<p><strong>PyTorch:</strong></p>
+<ul>
+<li>
+<p>To create a summary writer (to write events/data to disk):</p>
+<p><strong>from torch.utils.tensorboard import SummaryWriter</strong></p>
+<p><strong>file_writer = tb.SummaryWriter('./logdir’)  </strong># Create file writer for logging to disk</p>
+<p><strong>file_writer.add_scalar(&lt;Namespace&gt;, &lt;value&gt;, step=i)  </strong># Log a scalar</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>TensorFlow:</strong></p>
+<ul>
+<li>
+<p>Create a tensorboard callback - e.g. for Keras (can be used in <strong>model.fit()</strong>):</p>
+<p><strong>Import tensorflow as tf</strong></p>
+<p><strong>Tensorboard_callback = tf.keras.callbacks.Tensorboard(log_dir=log_dir)</strong></p>
+</li>
+<li>
+<p>Create a file writer (need to log data to disk):</p>
+<p><strong>file_writer = tf.summary.create_file_writer(logdir)  </strong># Create file writer</p>
+<p><strong>with file_writer.as_default():</strong></p>
+<p><strong>  tf.summary.scalar(&lt;Namespace&gt;, &lt;value&gt;, step=i)  </strong># Log a scalar</p>
+<pre><code>**tf.summary.image(“Image”, &amp;lt;img&gt;, step=i)  **# Log a (tensor) image
+
+**tf.summary.image(“Image”, &amp;lt;img&gt;, step=i)  **# Multiple images
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Run tensorboard server inside a Python program:</p>
+</li>
+</ul>
+<p>from tensorboard import program</p>
+<p>tb = program.TensorBoard()</p>
+<p>tb.configure(argv=[None, "--logdir", log_dir, "--port", port])</p>
+<p>tb.launch()</p>
+<p><strong>Notes on TensorFlow Agents (tf-agents)</strong></p>
+<ul>
+<li>Library for implementing efficient, batched reinforcement learning algorithms in TensorFlow</li>
+<li><a href="https://lilianweng.github.io/lil-log/">API Documentation</a></li>
+<li>Creating a TensorFlow environment using a custom gym environment:<ul>
+<li><a href="https://www.mikulskibartosz.name/how-to-create-an-environment-for-a-tensorflow-agent/">Article</a></li>
+<li><strong>from tf_agents.environments import gym_wrapper, tf_py_environment</strong></li>
+<li><strong>env = tf_py_environment.TFPyEnvironment(gym_wrapper.GymWrapper(your_env))</strong></li>
+</ul>
+</li>
+<li>Installing tf-agents:</li>
+<li>
+<p><a href="https://github.com/tensorflow/agents">GitHub</a></p>
+<pre><code>**&gt; pip install --upgrade tf-agents-nightly**
+
+**&gt; pip install tfp-nightly**
+</code></pre>
+</li>
+<li>
+<p>PPO Agent: </p>
+<ul>
+<li>API Doc</li>
+<li><a href="https://github.com/tensorflow/agents/blob/master/tf_agents/agents/ppo/ppo_agent.py">Code Implementation</a></li>
+<li><a href="https://www.arconsis.com/unternehmen/blog/reinforcement-learning-doom-with-tf-agents-and-ppo">Teaching an agent to play Doom</a></li>
+</ul>
+</li>
+<li>Common objects in tf-agents:<ul>
+<li><strong>BoundedArraySpec </strong>→ Python (NumPy).  Specification, typically used for defining the different spaces (e.g. state, action, etc.) in Python environments.</li>
+<li><strong>BoundedTensorSpec </strong>→ TensorFlow. Specification, typically used for defining the different spaces (e.g. state, action, etc.) in Python environments.</li>
+<li><strong>agent </strong>- Typically an object composed of an actor-critic neural framework.</li>
+<li><strong>policy - </strong>Typically an actor, implemented by a neural network.</li>
+</ul>
+</li>
+<li>
+<p>Create video from step replay buffer:</p>
+<pre><code>        # Get dataset from replay buffer
+
+**        dataset = self.replay_buffer.as_dataset()**
+
+        **for step, _ in iter(dataset):**  # Iterate through dataset
+
+            **self.video_train.append(step.observation.numpy())**
+
+**        self.create_video(mode='train')**
+</code></pre>
+<ul>
+<li>
+<p>Time Step<strong>: </strong></p>
+<ul>
+<li><strong>self.tf_env.reset()</strong></li>
+<li><strong>self.tf_env.step(action)</strong></li>
+<li>
+<p>Composed of the following attributes (which can be accessed and converted to NumPy):</p>
+<ul>
+<li>
+<p>Observation - The observation from the environment:</p>
+<p><strong>time_step.observation.numpy()</strong></p>
+</li>
+<li>
+<p>Discount factor - The discount factor from the environment:</p>
+<p><strong>time_step.observation.discount()</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Action Step<strong>:</strong></p>
+<ul>
+<li><strong>agent.policy.action(time_step)</strong></li>
+</ul>
+</li>
+<li>Reward<strong>:</strong><ul>
+<li><strong>time_step.reward</strong></li>
+</ul>
+</li>
+<li>Replay Buffer:<ul>
+<li><strong>py_uniform_replay_buffer </strong>- Samples uniformly at random from Python time steps.</li>
+<li><strong>tf_uniform_replay_buffer </strong>- Samples uniformly at random from TensorFlow time steps.</li>
+</ul>
+</li>
+<li>Experience Drivers:<ul>
+<li>Enable for data collection using tf-agents</li>
+<li><strong>Dynamic Step Driver: </strong>Collects up to a certain number of steps each time the class method <strong>.run()</strong> is called.  Useful if episodes are variable in length.</li>
+<li><strong>Dynamic Episode Driver: </strong>Collects up to a certain number of episodes each time the class method <strong>.run()</strong> is called.</li>
+</ul>
+</li>
+<li>Debugging PPO in tf-agents:</li>
+<li>
+<p>If the error is a dimension error, chek that:</p>
+<ul>
+<li>Actor Network takes in:<ul>
+<li>Observation Spec</li>
+<li>Action Spec</li>
+</ul>
+</li>
+<li>Value Network takes in:<ul>
+<li>Observation Spec</li>
+</ul>
+</li>
+<li>
+<p>“Type 1 is type tuple, Type 2 is type Listener”: <a href="https://github.com/tensorflow/agents/issues/70">LINK</a> (make sure to pass policy_state into action selection as this can be an issue when using RNNs with tf-agents)</p>
+<p><strong>#</strong> policy state:  A Tensor, or a nested dict, list or tuple of Tensors</p>
+<pre><code>    representing the previous policy_state.
+</code></pre>
+</li>
+</ul>
+<p><strong>policy_state = agent.policy.get_initial_state(eval_env.batch_size)</strong></p>
+<pre><code>**action, policy_state, info =agent.policy.action(time_step, policy_state)**
+
+**time_step = eval_env.step(action)**
+</code></pre>
+<ul>
+<li>“ValueError: Could not find matching function to call loaded from the SavedModel” / Can’t Predict Actions When Loading Saved Model<ul>
+<li>This occurred for me when I was trying to load a saved policy, and make an action prediction</li>
+<li><a href="https://github.com/tensorflow/agents/issues/190">Source</a> for fix</li>
+<li>Resolution:<ul>
+<li>When creating observations, try putting a <strong>tf.convert_tensor</strong> wrapper around your inconsistent data types (e.g. for data types that don’t have a tf data type in the TensorSpec printed to console from the stack trace)</li>
+<li>
+<p>Make sure to wrap observations in an inner list and outer tensor with the correct data type, e.g:</p>
+<p><strong>observations= tf.convert_to_tensor( [state], dtype=tf.float64, name='observations')</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Creating a PPO Agent in TensorFlow:</p>
+<ul>
+<li><a href="https://www.arconsis.com/unternehmen/blog/reinforcement-learning-doom-with-tf-agents-and-ppo">One guide</a></li>
+<li>Need to have:<ul>
+<li>TensorFlow environment - i.e. a gym environment with a TensorFlow environment wrapper</li>
+<li>actor_net: Takes as input observation and action specs from TensorFlow environment.  Can be ActorDistributionNetwork or ActorDistributionRnnNetwork (see section below).</li>
+<li>value_net: Takes as input observation specs from TensorFlow environment.  Can be ValueNetork or ValueRnnNetwork (see section below).</li>
+<li>agent: Instance of ppo_agent.PPOAgent class:<ul>
+<li>Takes as input:<ul>
+<li>Specs:<ul>
+<li>Time_step spec</li>
+<li>Observation_spec</li>
+<li>Action_spec</li>
+</ul>
+</li>
+<li>Optimizer</li>
+<li>Networks (actor-critic framework)<ul>
+<li>actor_net </li>
+<li>Value_net</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Actor-Critic Frameworks:<ul>
+<li>ActorDistributionNetwork - Maps observations into distributions over actions (i.e. learns neural approximations for policies)</li>
+<li>ActorDistributionRnnNetwork - Same as above, but with LSTM layer</li>
+<li>ValueNetwork - Maps observations into rewards (i.e. learns neural approximations for value functions)</li>
+<li>ValueRnnNetwork - Same as above, but with LSTM layer</li>
+</ul>
+</li>
+<li>
+<p>Saving and loading tf-agents policies:</p>
+<ul>
+<li>
+<p>Saving policies:</p>
+<h1 id="create-train-and-evaluation-policy-savers">Create train and evaluation policy savers</h1>
+<p><strong>self.train_saver = PolicySaver(self.collect_policy, batch_size=None)</strong></p>
+<p><strong>self.eval_saver = PolicySaver(self.eval_policy, batch_size=None)</strong></p>
+<p><strong># </strong>Now save training and evaluation policies</p>
+<p><strong>self.train_saver.save(train_save_dir)</strong></p>
+<p><strong>self.eval_saver.save(eval_save_dir)</strong></p>
+</li>
+<li>
+<p>Loading policies:</p>
+<pre><code># Load training and evaluation policies
+
+**self.train_policy = tf.saved_model.load(train_save_dir)**
+
+**self.eval_policy = tf.saved_model.load(eval_save_dir)**
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Creating a custom observation spec with a new shape (e.g. for frame stacking):</p>
+<p><strong>from tf_agents.specs.tensor_spec import BoundedTensorSpec</strong></p>
+<p><strong>obs_spec = env.observation_spec()  </strong># Get current observation spec</p>
+<p><strong>stacked_shape = tuple(obs_spec.shape[:-1]+obs_spec.shape[-1]*num_frames)</strong></p>
+<p><strong>obs_spec = BoundedTensorSpec(stacked_shape, obs_spec.dtype,</strong></p>
+<pre><code>    **                                  minimum=obs_spec.minimum,**
+
+    **                                  maximum=obs_spec.maximum,**
+
+    **                                  name=obs_spec.name)**
+</code></pre>
+</li>
+<li>
+<p><strong>Fixing Incompatible Tensors/Specs:</strong></p>
+<ul>
+<li>Make sure that the arguments passed in to the following match the relative shapes (unbatched) of the different specs you define<ul>
+<li>ts.reset</li>
+<li>ts.transition</li>
+<li><strong>Make sure to use np.array([])  # Brackets are important!</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Keras:</strong></p>
+<ul>
+<li>High level API for TensorFlow</li>
+<li>Can build classes for models<ul>
+<li>Make sure to build by calling on valid-dimensional input</li>
+</ul>
+</li>
+<li>Key functions/classes:<ul>
+<li>tf.Keras.models.model</li>
+<li>model.compile</li>
+<li>model.fit</li>
+<li>model.evaluate</li>
+<li>model.predict</li>
+</ul>
+</li>
+<li>
+<p>Subclassing models.  Need to define (1) Constructor, and (2) Call methods.  See example here:</p>
+<p><strong>Import tensorflow as tf</strong></p>
+<p><strong>class ResNet(tf.keras.Model):  </strong># Be sure to include the tf.keras.Model superclass</p>
+<p><strong>    def <strong>init</strong>(self): </strong> # Constructor method - sets attributes for architecture</p>
+<p><strong>        super(ResNet, self).<strong>init</strong>()</strong></p>
+<p><strong>        self.block_1 = ResNetBlock()</strong></p>
+<p><strong>        self.block_2 = ResNetBlock()</strong></p>
+<p><strong>        self.global_pool = layers.GlobalAveragePooling2D()</strong></p>
+<p><strong>        self.classifier = Dense(num_classes)</strong></p>
+<p><strong>    def call(self, inputs):  </strong># Call method - this specifies how inputs → outputs</p>
+<p><strong>        x = self.block_1(inputs)</strong></p>
+<p><strong>        x = self.block_2(x)</strong></p>
+<p><strong>        x = self.global_pool(x)</strong></p>
+<p><strong>        return self.classifier(x)</strong></p>
+</li>
+<li>
+<p>Concatenation layers in Keras (<a href="https://keras.io/api/layers/merging_layers/concatenate/">source</a>):</p>
+<ul>
+<li>Used for combining multiple inputs together</li>
+<li>
+<p>Example:</p>
+<p><strong>concat = tf.keras.layers.Concatenate(axis=1)([input1, input2])</strong></p>
+</li>
+</ul>
+</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
