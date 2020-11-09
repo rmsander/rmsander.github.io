@@ -1,476 +1,1294 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
-        
-        
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>My CS/AI Quick Reference Guide</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
 
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href=".">My CS/AI Quick Reference Guide</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>My CS/AI Quick Reference Guide</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="about/" class="nav-link">About</a>
-                            </li>
-                        </ul>
+    <script src="js/jquery-1.10.2.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
 
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="about/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
+<body class="homepage">
+<div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href=".">My CS/AI Quick Reference Guide</a>
+        <!-- Expander button -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse"
+                data-target="#navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
         </button>
-    </div>
 
-    
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            
-            
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+        <!-- Expanded navigation -->
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+                <li class="navitem active">
+                    <a href="." class="nav-link">Home</a>
+                </li>
+                <li class="navitem">
+                    <a href="about/" class="nav-link">About</a>
+                </li>
+            </ul>
 
-<h3 id="overview">Overview</h3>
-<h5 id="ryan-sander-graduate-student-mit"><a href="https://rmsander.github.io">Ryan Sander</a>, Graduate Student @ MIT</h5>
-<p>This guide serves to provide users with efficient access to a variety of different concepts and practical problem/solution discussions in the fields of:</p>
-<ul>
-<li>Computer Science &amp; Programming</li>
-<li>Electrical Engineering</li>
-<li>Economics</li>
-<li>Mathematics</li>
-<li>Leadership</li>
-<li>Writing</li>
-</ul>
-<p>If you would like to learn more about (a growing list of) these concepts in-depth or would like to practice them, please check out my GitHub repository here.  This guide is by no means complete and is routinely updated.  My hope is that in its current state, this guide provides you with valuable insight into concepts and implementations for your projects in the aforementioned fields.</p>
-<p><strong>WARNING</strong>: This guide is not intended for commercial use, and should not be redistributed for profit.  I have made efforts to make citations where they are due, but a few may still be missing.</p>
-<p><strong>NOTE</strong>: This website is currently under construction, but more content will be coming soon :) </p>
-<h3 id="technical-tools-guide">Technical Tools Guide</h3>
-<p>The first section of this guide is designed to provide users with access to pertinent information, usage guides, and bug resolutions for a variety of different technical tools.</p>
-<ul>
-<li>
-<p>Operating Systems:</p>
-<ul>
-<li>Linux:<ul>
-<li>Ubuntu (16.04/18.04)</li>
-<li>RHEL/CentOS</li>
-</ul>
-</li>
-<li>Windows (more coming soon)</li>
-<li>ROS</li>
-</ul>
-</li>
-<li>
-<p>Python:</p>
-<ul>
-<li>
-<p>Native Python:</p>
-<ul>
-<li><code>os</code> (operating system)</li>
-<li><code>argparse</code> (argument parsing)</li>
-<li><code>re</code> (regular expressions)</li>
-<li><code>json</code> (create/process json files)</li>
-<li><code>tarball</code> (create/process tarball files)</li>
-<li><code>h5py</code> (create/process h5 files)</li>
-</ul>
-</li>
-<li>
-<p><code>TensorFlow</code> (Deep Learning + Numerical Computing):</p>
-<ul>
-<li><code>TensorFlow</code></li>
-<li><code>TensorBoard</code> (plotting)</li>
-<li><code>Keras</code> (high-level TensorFlow API)</li>
-<li><code>TensorFlow-Agents</code> (Reinforcement Learning in TensorFlow)</li>
-</ul>
-</li>
-<li>
-<p><code>PyTorch</code> (Deep Learning + Numerical Computing):</p>
-<ul>
-<li><code>PyTorch</code></li>
-<li><code>TensorBoard</code> (plotting)</li>
-<li><code>Torchvision</code> (Computer Vision with PyTorch)</li>
-<li><code>Points3D</code> (coming soon - 3D Computer Vision in PyTorch)</li>
-</ul>
-</li>
-<li>
-<p><code>OpenCV</code> (Computer Vision)</p>
-</li>
-<li><code>NumPy</code> (Numerical Programming Package)</li>
-<li><code>Xvfb</code> (Headless rendering)</li>
-<li><code>OpenAI Gym</code> (Reinforcement Learning Simulations)<ul>
-<li>car-racing</li>
-<li>Vizdoom</li>
-</ul>
-</li>
-<li><code>Matplotlib</code> (Matlab-based plotting functions)</li>
-<li><code>Pyglet</code> (Graphics, animations, and applications)</li>
-<li><code>Pandas</code> (Data Analysis, Processing, and Manipulation)</li>
-<li><code>SciPy</code> (Scientific Programming Functions)</li>
-<li><code>Scikit-Learn</code>  (Supervised and unsupervised machine learning)</li>
-<li><code>Rospy</code> (coming soon)</li>
-</ul>
-</li>
-<li>
-<p>General Programming Practices</p>
-</li>
-<li>
-<p>Miscellaneous</p>
-<ul>
-<li>Pomegranate</li>
-<li>Librosa</li>
-<li>pymed (coming soon)</li>
-<li>Shrink PDFs with command-line (coming soon)</li>
-</ul>
-</li>
-<li>
-<p>Performance Engineering:</p>
-<ul>
-<li>C++<ul>
-<li>Overview of C++</li>
-<li>Roscpp (more coming soon)</li>
-</ul>
-</li>
-<li>Performance Optimization for Machine Learning</li>
-</ul>
-</li>
-<li>
-<p>IDEs:</p>
-<ul>
-<li>PyCharm</li>
-<li>Vim</li>
-</ul>
-</li>
-<li>
-<p>Interpreters:</p>
-<ul>
-<li>Bash (coming soon)</li>
-<li>Jupyter/Jupytext</li>
-</ul>
-</li>
-<li>
-<p>Scientific Computing:</p>
-<ul>
-<li>Matlab</li>
-<li>Stata</li>
-<li>R (coming soon)
- *Julia<ul>
-<li>Native Julia</li>
-<li>Gen (probabilistic programming)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Web Development:</p>
-<ul>
-<li>HTML (coming soon)</li>
-<li>Server Side Includes (SSI)</li>
-<li>SSL Keys</li>
-<li>Nginx</li>
-<li>JavaScript</li>
-<li>NodeJS</li>
-<li>Node Package Manager (npm)</li>
-<li>PostGreSQL</li>
-<li>Online Tools:<ul>
-<li>Digital Ocean</li>
-<li>Wix</li>
-<li>SquareSpace</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Cloud Computing and Containerization:</p>
-<ul>
-<li>Cloud Services:<ul>
-<li>Amazon Web Services (AWS)</li>
-<li>Elastic Compute Cloud (EC2)</li>
-<li><code>Boto3</code> (Python EC2 API)</li>
-<li>S3</li>
-<li><code>awscli</code> (AWS command-line interface)</li>
-<li>Google Cloud Compute (GC2)</li>
-<li>Microsoft Azure (coming soon)</li>
-<li>MIT Satori (coming soon)</li>
-<li>MIT SuperCloud</li>
-<li>Docker</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Other Tools:</p>
-<ul>
-<li>Google Suite (Drive, Chrome)</li>
-<li>LaTeX</li>
-<li>GitHub</li>
-<li>Automated Emails (using Python) GitHub repository</li>
-<li>PowerPoint Labs (coming soon)</li>
-<li>Google Drive</li>
-</ul>
-</li>
-<li>
-<p>Remote tools (coming soon):</p>
-<ul>
-<li>Zoom (coming soon)</li>
-<li>AWW (whiteboard app) (coming soon)</li>
-<li>Anydesk (coming soon)</li>
-<li>Cocalc (coming soon) - link</li>
-<li>WebEx (coming soon)</li>
-<li>Skype (coming soon)</li>
-<li>Google Colab (coming soon)</li>
-<li>PuTTy (coming soon)</li>
-</ul>
-</li>
-</ul>
-<h3 id="technical-concepts-guide">Technical Concepts Guide</h3>
-<p>Additionally, the latter component of this guide is meant to serve as a high-level resource/guide to concepts in: </p>
-<ul>
-<li>
-<p>Artificial intelligence:</p>
-<ul>
-<li>Machine Learning</li>
-<li>Types of Learning:<ul>
-<li>Supervised Learning</li>
-<li>Unsupervised Learning</li>
-</ul>
-</li>
-<li>Neural Networks:</li>
-<li>General PyTorch Supervised Neural Network Training Process</li>
-<li>Computer Vision PyTorch Supervised Neural Network Training Process</li>
-<li>Deep generative Models - GANs + VAE</li>
-<li>Temporal Convolution Networks</li>
-<li>Machine Learning Domains:<ul>
-<li>Computer Vision</li>
-<li>Reinforcement Learning</li>
-<li>Natural Language Processing</li>
-</ul>
-</li>
-<li>
-<p>Feature Engineering</p>
-</li>
-<li>
-<p>General AI:</p>
-<ul>
-<li>Adversarial Search</li>
-<li>Game Theory</li>
-<li>Constraint Satisfaction Problems (CSPs)</li>
-</ul>
-</li>
-<li>
-<p>Embodied Intelligence</p>
-<ul>
-<li>Robotics:<ul>
-<li>Search Algorithms</li>
-<li>Particle Filtering</li>
-<li>SLAM</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>*Probabilistic Inference:
-    * Bayesian and Probabilistic Algorithms
-    * Inference: ADVI, MCMC, GPs, Bayesian Optimization
-    * Probabilistic Programming (using <code>Gen</code>)</p>
-</li>
-<li>
-<p>Mathematics:</p>
-<ul>
-<li>Real analysis </li>
-<li>Fourier Analysis</li>
-<li>Linear Algebra (coming soon)</li>
-<li>Multivariable Calculus (coming soon)</li>
-<li>Differential Equations (coming soon)</li>
-</ul>
-</li>
-<li>
-<p>Computer Science:</p>
-<ul>
-<li>Algorithms and data structures</li>
-<li>Software construction (coming soon)</li>
-<li>Computer graphics (coming soon)</li>
-</ul>
-</li>
-<li>
-<p>Signal Processing:</p>
-<ul>
-<li>Deterministic and stochastic signal processing</li>
-<li>Filtering</li>
-<li>Fourier, Laplace, and Z-Transforms</li>
-<li>Electromagnetics (coming soon)</li>
-</ul>
-</li>
-<li>
-<p>Economics:</p>
-<ul>
-<li>Econometrics:<ul>
-<li>Regression Techniques</li>
-<li>Inference</li>
-<li>Tests</li>
-<li>Data Types/Datasets in Econometrics</li>
-<li>Time Series Analysis</li>
-</ul>
-</li>
-<li>Microeconomics</li>
-</ul>
-</li>
-<li>
-<p>Research, Management, and Operations:</p>
-<ul>
-<li>General topics in research</li>
-<li>Neural Network Diagram tool</li>
-<li>Peer Review techniques (coming soon)<ul>
-<li>Computer Science</li>
-<li>Real Analysis</li>
-</ul>
-</li>
-<li>Leadership (coming soon)</li>
-<li>Project Engineering</li>
-<li>System Dynamics and Systems Thinking</li>
-<li>DevOps</li>
-<li>Research Papers (for machine learning)</li>
-<li>Datasets (for machine learning)</li>
-</ul>
-</li>
-<li>
-<p>Other Topics:</p>
-<ul>
-<li>Giving Feedback</li>
-<li>Diversity and Inclusion</li>
-<li>“The Art of the Career”</li>
-</ul>
-</li>
-</ul></div>
-            </div>
-        </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="modal"
+                       data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a rel="prev" class="nav-link disabled">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a rel="next" href="about/" class="nav-link">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
 
-    </body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix"
+                 role="complementary">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggler collapsed"
+                            data-toggle="collapse" data-target="#toc-collapse"
+                            title="Table of Contents">
+                        <span class="fa fa-angle-down"></span>
+                    </button>
+                </div>
+
+
+                <div id="toc-collapse"
+                     class="navbar-collapse collapse card bg-secondary">
+                    <ul class="nav flex-column">
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9" role="main">
+
+            <h3 id="overview">My CS/AI Quick Reference Guide</h3>
+            <h5 id="ryan-sander-graduate-student-mit"><a
+                    href="https://rmsander.github.io">Ryan Sander</a>, Graduate
+                Student @ MIT</h5>
+            <p>
+            </p>
+            <p>
+                M.Eng. Artificial Intelligence, MIT 2021 <br>
+                B.S. EECS, Mathematical Economics, MIT 2020
+            </p>
+            <p>
+                This guide serves to provide users with efficient access to a
+                variety of different concepts and practical problem/solution
+                discussions in the fields of:
+            </p>
+            <ol>
+
+                <li>Computer Science & Programming
+
+                <li>Electrical Engineering
+
+                <li>Economics
+
+                <li>Mathematics
+
+                <li>Leadership
+
+                <li>Writing
+                </li>
+            </ol>
+            <p>
+                If you would like to learn more about (a growing list of) these
+                concepts in-depth or would like to practice them, please check
+                out my <strong><a
+                    href="https://github.com/rmsander/learning-machine_learning">GitHub
+                repository here</a></strong>. This guide is by no means
+                complete and is routinely updated. My hope is that in its
+                current state, this guide provides you with valuable insight
+                into concepts and implementations for your projects in the
+                aforementioned fields.
+            </p>
+            <p>
+                <strong>WARNING: </strong>This guide is not intended for
+                commercial use, and should not be redistributed for profit. I
+                have made efforts to make citations where they are due, but a
+                few may still be missing.
+            </p>
+            <p>
+                <strong>Operating Systems:</strong>
+            </p>
+            <ul>
+
+                <li><strong>Linux</strong>:
+                    <ul>
+
+                        <li><strong><a
+                                href="https://docs.google.com/document/d/1m2UNfyf7I3w1m1LdtCc_jQ3aqJvF5-n-0bkINfpwe5I/edit?usp=sharing">Ubuntu
+                            (16.04/18.04)</a></strong>
+
+                        <li><strong><a
+                                href="https://docs.google.com/document/d/1Z-IcWoRSnNMjG2C-XB9ZsOyjWFu3_N8-Z4Uxe4JOaWw/edit?usp=sharing">RHEL/CentOS</a></strong>
+                        </li>
+                    </ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1e0IYX9iPFPJzZITvz2Ccq2JGJYP5ZSA5BSTpxYWC9WM/edit?usp=sharing">Windows</a></strong>
+                    (more coming soon)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1VTqEJKOqop1qFZrO52RYIsZ2O3U7spTuzHhfQCxupzE/edit?usp=sharing">ROS</a></strong>
+                </li>
+            </ul>
+            <p>
+                <strong>Python:</strong>
+            </p>
+            <ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1fGVGYtH0Cam99LM_JkkDRd06wgOC5zUt56E1U34bvco/edit?usp=sharing">Native
+                    Python</a>:</strong>
+                    <ul>
+
+                        <li>os (operating system)
+
+                        <li>argparse (argument parsing)
+
+                        <li>re (regular expressions)
+
+                        <li>json (create/process json files)
+
+                        <li>tarball (create/process tarball files)
+
+                        <li>h5py (create/process h5 files)
+                            <ul>
+
+                                <li><strong><a
+                                        href="https://docs.google.com/document/d/1U6cgTok3zNSysXErge0XZeuwbE2qWWxDqeRZhXWpAUw/edit?usp=sharing">TensorFlow</a>:
+                                </strong>(Deep Learning + Numerical Computing)
+                                    <ul>
+
+                                        <li>TensorFlow
+
+                                        <li>TensorBoard (plotting)
+
+                                        <li>Keras (high-level TensorFlow API)
+
+                                        <li>TensorFlow-Agents (Reinforcement
+                                            Learning in TensorFlow)
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1lwgmNUKGq41k6e0veTZq7TdS870f1dd4De-d_jLAERI/edit?usp=sharing">PyTorch</a>
+                </strong>(Deep Learning + Numerical Computing)
+                    <ul>
+
+                        <li>PyTorch
+
+                        <li>TensorBoard (plotting)
+
+                        <li>Torchvision (Computer Vision with PyTorch)
+
+                        <li>Points3D (coming soon - 3D Computer Vision)
+                        </li>
+                    </ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1I4LaKp6H3CCXAX_iA1SBdRKWI1JSpUKedVaaMq-Cu-w/edit?usp=sharing">Ray/Rllib</a></strong>
+                    (Scalable Reinforcement Learning)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1K7_9UfItDLpFQ1yhbiVZ0m2ZX0KOvg2UzY0G4a0i_ic/edit?usp=sharing">Mujoco_py</a>
+                </strong>(MuJoCo with Python)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1IjE40nGQobkfw0whlSNyrF_FD6Qtb88uWe_JfSLAXpE/edit?usp=sharing">OpenCV</a>
+                </strong>(Computer Vision)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1jcbv_qOxq8nFdfrCmDRdY3MFFVLKX-cDhttxemW4oVQ/edit?usp=sharing">NumPy</a>
+                </strong>(Numerical Programming Package)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1LNQQ5B-cWDAnwFQocpfPKV6XhzbGPvQEBIkQ2vTICSc/edit?usp=sharing">Xvfb</a>
+                </strong>(Headless rendering)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1qjg4w7aUbtozS-jQa-J-cPz6ZhVvtzwrziqQ38q1qXw/edit?usp=sharing">OpenAI
+                    Gym</a> </strong>(Reinforcement Learning Simulations)
+                    <ul>
+
+                        <li>car-racing
+
+                        <li>Vizdoom
+                        </li>
+                    </ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1Np1Vb_FoDGI6ydFLn8girtkYN7MOqmalVsLg9Vz7n40/edit?usp=sharing">Pyglet</a>
+                </strong>(Graphics, animations, and applications)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1AwSmY3oOVZM997XgjlcInvYq_LonrRoFELscA3-OR5Y/edit?usp=sharing">PyQt5</a></strong>
+                    (GUI, Displays)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1AGGHL7V6kCYduKnou2pFXNFtA7eeovMjNC9ZIDqbOEc/edit?usp=sharing">Pandas</a>
+                </strong>(Data Analysis, Processing, and Manipulation)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1LklLqbeV3__Z3Tt9SirhlrELaPTEM8gZca-dDV_tgQA/edit?usp=sharing">SciPy</a>
+                </strong>(Scientific Programming Functions)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1tFbK5M5l7Grfg8os7hxWLqnErHtz3oiC86wCw41_tWw/edit?usp=sharing">Scikit-Learn</a>
+                </strong>(Supervised and unsupervised machine learning)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1M8gDgose0-vBi3TiZqPExN6iUYehYAZY8HxRMrGAqfc/edit?usp=sharing">Matplotlib</a>
+                </strong>(Matlab-based plotting functions)
+
+                <li>Rospy (coming soon)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1q8ySyA1MW-sb8d1_gDDxKtT-8DewUJwI5Z0eTIkEn5Y/edit?usp=sharing">General
+                    Programming Practices</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1sLTESZd5rmP_RZ8my4xTV_yVTGAhJiA1XyEUImw-9dQ/edit?usp=sharing">Miscellaneous</a></strong>
+
+                <li>Pomegranate
+
+                <li>Librosa
+
+                <li>pymed (coming soon)
+
+                <li>Shrink PDFs with command-line (coming soon)
+                </li>
+            </ul>
+            <p>
+                <strong>Performance Engineering:</strong>
+            </p>
+            <ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1IajH_t22T5Hhtk5dn8VoYcXoUsa8IGC8JZCVvUNmwQs/edit?usp=sharing">C++</a></strong>
+                    <ul>
+
+                        <li>Overview of C++
+
+                        <li>Roscpp (more coming soon)
+                        </li>
+                    </ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1H-pRoO7q-c_n5pJoV2rjKRR01I1PuvQ_NuHjp89Jddo/edit?usp=sharing">Performance
+                    Optimization for Machine Learning</a></strong>
+                </li>
+            </ul>
+            <p>
+                <strong>IDEs:</strong>
+            </p>
+            <ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1PPjABNpmPI92KRZrK-V37B9RiQVhTcdo0PtJwdo8LNg/edit?usp=sharing">PyCharm</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1e1SvOM2PJPtA-nyiSB2fFAxryrVHsIh4lXlPfDSo9WU/edit?usp=sharing">Vim</a></strong>
+                </li>
+            </ul>
+            <p>
+                <strong>Interpreters:</strong>
+            </p>
+            <ul>
+
+                <li>Bash (coming soon)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1QOdDZrHGEAoVDpwBkAahbE4Wz-MEgxUV6XStYSFUmQ8/edit?usp=sharing">Jupyter/Jupytext</a></strong>
+                </li>
+            </ul>
+            <p>
+                <strong>Scientific Computing:</strong>
+            </p>
+            <ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1tyVWa1KyPZ6T6bOsLwkHxWHoC1nnV-JY2iSFPE_swu8/edit?usp=sharing">Matlab</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1k_kXx29H47W-fKTLqqomFWfRhlN8DKs36sG-PfhSpSw/edit?usp=sharing">Stata</a></strong>
+
+                <li>R (coming soon)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/18p3q3Cvb2eB1GDjzZjj2OPruoSWLT7K-CJ-lQpe2gMA/edit?usp=sharing">Julia</a></strong>
+                    <ul>
+
+                        <li>Native Julia
+
+                        <li>Gen (probabilistic programming)
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                <strong>Web Development:</strong>
+            </p>
+            <ul>
+
+                <li>HTML (coming soon)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1915P6BK6KrZ50q6MpFkYEKMRFEoqg8bq0pWNf6Bm_ag/edit?usp=sharing">Server
+                    Side Includes (SSI)</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1agxun4yycNgRSq5zUMHFUjU68c1TJsxVFuKioCIOF14/edit?usp=sharing">SSL
+                    Keys</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1jCt4cIwrhGZVVe1Qruzq0SeYr8HPp386vg_LKPOlMk8/edit?usp=sharing">Nginx</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1eb51jXzlWz9i2JLI4uNoWoEYWUDbzv0qadUrlj_EVKw/edit?usp=sharing">JavaScript</a></strong>
+                    <ul>
+
+                        <li>NodeJS
+
+                        <li>Node Package Manager (npm)
+                        </li>
+                    </ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1cl_YhY86ZC69h6burVR6R092y-E2IRDa9E6K9WJpmcE/edit?usp=sharing">PostGreSQL</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1k21zwFSRgKj3fXiOH23bS_Yl10DSavj8Je2z9H-5SBg/edit?usp=sharing">Online
+                    Tools:</a></strong>
+                    <ul>
+
+                        <li>Digital Ocean
+
+                        <li>Wix
+
+                        <li>SquareSpace
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                <strong>Cloud Computing and Containerization:</strong>
+            </p>
+            <ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1deBIqB03ojMrn9ip5d1Gn96bj1V7W6x13udKXyPS2wk/edit?usp=sharing">Cloud
+                    Services:</a></strong>
+                    <ul>
+
+                        <li>Amazon Web Services (AWS)
+                            <ul>
+
+                                <li>Elastic Compute Cloud (EC2)
+
+                                <li>Boto3 (Python EC2 API)
+
+                                <li>S3
+
+                                <li>awscli (AWS command-line interface)
+                                </li>
+                            </ul>
+
+                        <li>Google Cloud Compute (GC2)
+
+                        <li>Microsoft Azure (coming soon)
+
+                        <li>MIT Satori (coming soon)
+
+                        <li>MIT SuperCloud
+                        </li>
+                    </ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1KFn_HKWEQYNF8gCi8Ox4SL_YOMViFbEub7HvITz_dA4/edit?usp=sharing">Docker</a></strong>
+                </li>
+            </ul>
+            <p>
+                <strong>Other Tools:</strong>
+            </p>
+            <ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1kKpN8f-M4xQBaFDBqQ49_0xoA8dD6bHMPPjp-nbC2Ag/edit?usp=sharing">Google
+                    Suite (Drive, Chrome)</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1UVRf8pnOWBC91J3TMDP8W7DiZMHcfKTaLystn_mZt38/edit?usp=sharing">LaTeX</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/11FH7bA3nX9KJh7TLdhTEti0twvLZDFskZ3I9O4egydo/edit?usp=sharing">GitHub</a></strong>
+
+                <li><strong><a
+                        href="https://github.com/rmsander/webmoira-management">Automated
+                    Emails (using Python) GitHub repository</a></strong>
+
+                <li>PowerPoint Labs (coming soon)
+
+                <li><strong>Google Drive</strong>
+                </li>
+            </ul>
+            <p>
+                <strong>Remote tools (coming soon):</strong>
+            </p>
+            <ul>
+
+                <li>Zoom (coming soon)
+
+                <li>AWW (whiteboard app) (coming soon)
+
+                <li>Anydesk (coming soon)
+
+                <li>Cocalc (coming soon) - <a
+                        href="https://cocalc.com/index.html">link</a>
+
+                <li>WebEx (coming soon)
+
+                <li>Skype (coming soon)
+
+                <li>Google Colab (coming soon)
+
+                <li>PuTTy (coming soon)
+                </li>
+            </ul>
+            <p>
+                Additionally, the latter component of this guide is meant to
+                serve as a high-level resource/guide to concepts in:
+            </p>
+            <p>
+                <strong>Artificial intelligence:</strong>
+            </p>
+            <ul>
+
+                <li>Machine Learning
+                    <ul>
+
+                        <li>Types of Learning:
+                            <ul>
+
+                                <li><strong><a
+                                        href="https://docs.google.com/document/d/1My4NsCpcImuoOpruJyuMZ1kTPGgwy-3FvY_RPp9ck2E/edit?usp=sharing">Supervised
+                                    Learning</a></strong>
+
+                                <li><strong><a
+                                        href="https://docs.google.com/document/d/14PIcgREDnKH7oqQiBvyxSIkSJe-JDvfL5Txe4IOpumc/edit?usp=sharing">Unsupervised
+                                    Learning</a></strong>
+                                </li>
+                            </ul>
+
+                        <li>Neural Networks:
+                            <ul>
+
+                                <li><strong><a
+                                        href="https://docs.google.com/document/d/1cSYNEQbiBDD8oOhRk6fd1OA3aOjTHd-nDCJFBbz-NOo/edit?usp=sharing">General
+                                    PyTorch Supervised Neural Network Training
+                                    Process</a></strong>
+
+                                <li><strong><a
+                                        href="https://docs.google.com/document/d/1vHUxgibl6sW2nnpJVEhqfplDHfHNJu0qarqaIzaZ7IE/edit?usp=sharing">Computer
+                                    Vision PyTorch Supervised Neural Network
+                                    Training Process</a></strong>
+
+                                <li><strong><a
+                                        href="https://docs.google.com/document/d/1tGfWpCjO7kDgxyZFppBhRzjqHWWyarOttKhWSzesQh8/edit?usp=sharing">Deep
+                                    generative Models - GANs + VAE</a></strong>
+
+                                <li><strong><a
+                                        href="https://docs.google.com/document/d/1ntO50FNTQ3SSpO2y7PkSlyjpMDbDRCOlV_2qizFP8-E/edit?usp=sharing">Temporal
+                                    Convolution Networks</a></strong>
+                                </li>
+                            </ul>
+
+                        <li>Machine Learning Domains:
+                            <ul>
+
+                                <li><strong><a
+                                        href="https://docs.google.com/document/d/1tqqu3N4mPhmTXlTrZ5A-_H4vQBnI9yUOCihjc8ZdcMw/edit?usp=sharing">Computer
+                                    Vision</a></strong>
+
+                                <li><strong><a
+                                        href="https://docs.google.com/document/d/1Hdzc7slTUzoi63o3nKOh2emIasML821xNu73weaZwgc/edit?usp=sharing">Reinforcement
+                                    Learning</a></strong>
+
+                                <li><strong><a
+                                        href="https://docs.google.com/document/d/1a1cN7znA9crxmyyDfvckz2fwdOWWvWuGkTbTISn47PQ/edit?usp=sharing">Natural
+                                    Language Processing</a></strong>
+                                </li>
+                            </ul>
+
+                        <li><strong><a
+                                href="https://docs.google.com/document/d/1Jom9QW6nBxgz3kG7nhLjpYahum5oVsMbW4EJ_ZNeC_o/edit?usp=sharing">Feature
+                            Engineering</a></strong>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+
+                <strong><a
+                        href="https://docs.google.com/document/d/1norf8OBjnnqVtiE6UAmUa1mhyqRy8zEUysSiyTFwiE8/edit?usp=sharing">General
+                    AI:</a></strong>
+            </p>
+            <ul>
+
+                <li>Adversarial Search
+
+                <li>Game Theory
+
+                <li>Constraint Satisfaction Problems (CSPs)
+                    <ul></ul>
+
+                <li><strong><a
+                        href="https://www.overleaf.com/read/brygxnvvbnsm">Embodied
+                    Intelligence</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1Cr6-Qxj2CbaByRcV4sw3YpCuskPkkTGDa9MvEiNKqac/edit?usp=sharing">Robotics:</a></strong>
+                    <ul>
+
+                        <li>Search Algorithms
+
+                        <li>Particle Filtering
+
+                        <li>SLAM
+                            <ul></ul>
+                        </li>
+                    </ul>
+
+                <li>Probabilistic Inference:
+                    <ul>
+
+                        <li><strong><a
+                                href="https://docs.google.com/document/d/12pT_M7oM5mHYuieC3qJcSONQ2IbMlIQcUrYPIR2g7Dc/edit?usp=sharing">Bayesian
+                            and Probabilistic
+                            Algorithms</a></strong>
+
+                        <li><strong><a
+                                href="https://docs.google.com/document/d/1dvDBRT_n7gDq5oUbrb1DYoHTJfnyHi3HBg1dYj4etNk/edit?usp=sharing">Inference:
+                            ADVI, MCMC, GPs, Bayesian
+                            Optimization</a></strong>
+
+                        <li><strong><a
+                                href="https://www.overleaf.com/read/fxzdgkjrrghx">Probabilistic
+                            Programming</a></strong>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+            </li>
+            </ul>
+            <p>
+                <strong><a
+                        href="https://docs.google.com/document/d/1gESCoGlTddgQVJePAZ7fngxyHwjR4qsDyiW7kFv6xK4/edit?usp=sharing">Mathematics:</a></strong>
+            </p>
+            <ul>
+
+                <li>Real analysis
+
+                <li>Fourier Analysis
+
+                <li>Linear Algebra (coming soon)
+
+                <li>Multivariable Calculus (coming soon)
+
+                <li>Differential Equations (coming soon)
+                </li>
+            </ul>
+            <p>
+                <strong>Computer Science:</strong>
+            </p>
+            <ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1fmUJsvh7tnBtjufVBkfLQHQrIEAo2AIkfYxBZuzwGnA/edit?usp=sharing">Algorithms
+                    and data structures</a></strong>
+
+                <li>Software construction (coming soon)
+
+                <li>Computer graphics (coming soon)
+                </li>
+            </ul>
+            <p>
+                <strong><a
+                        href="https://docs.google.com/document/d/1biXHcM5kYPvYspfeAF2Q37SVK5H8n_UgYitmwNumEf0/edit?usp=sharing">Signal
+                    Processing:</a></strong>
+            </p>
+            <ul>
+
+                <li>Deterministic and stochastic signal processing
+
+                <li>Filtering
+
+                <li>Fourier, Laplace, and Z-Transforms
+
+                <li>Electromagnetics (coming soon)
+                </li>
+            </ul>
+            <p>
+                <strong>Economics:</strong>
+            </p>
+            <ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1-Q3Z4cZgUATJR13rmeUBwWclMFmwxZCM1HNwuYryf-0/edit?usp=sharing">Econometrics:</a></strong>
+                    <ul>
+
+                        <li>Regression Techniques
+
+                        <li>Inference
+
+                        <li>Tests
+
+                        <li>Data Types/Datasets in Econometrics
+                        </li>
+                    </ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1WJuGl3NmpKRlrrMxy9zpNj9Jj2esXg-HYxRSBqPCzpI/edit?usp=sharing">Time
+                    Series Analysis</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1_zEyWdwo2ywbBWN6Asg-NCKNH6bxj6wPPorNCWSAAxU/edit?usp=sharing">Microeconomics</a></strong>
+                </li>
+            </ul>
+            <p>
+                <strong>Research, Management, and Operations:</strong>
+            </p>
+            <ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1JvdhDP5PY-hU2d_NrNTMI6jZ16QH51UaDRNHOZFeqTI/edit?usp=sharing">General
+                    topics in research</a></strong>
+                    <ul>
+
+                        <li><strong><a href="http://alexlenail.me/NN-SVG/">Neural
+                            Network Diagram tool</a></strong>
+
+                        <li><strong>Peer Review techniques (coming
+                            soon)</strong>
+                            <ul>
+
+                                <li>Computer Science
+
+                                <li>Real Analysis
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                <li>Leadership (coming soon)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1KV3GAKeipJdnx5whtSG1wdQJ6OyLmd8IWNedcObR2Xw/edit?usp=sharing">Project
+                    Engineering</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1z8SzKHCRaSRVnpWEvgRATqpOBopbGoeMOc5RjZZhGRg/edit?usp=sharing">System
+                    Dynamics and Systems Thinking</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1QJSLnPS_UPoxJbhiuOBAg44GH1RMJCO8FHKqrrCyHSE/edit?usp=sharing">DevOps</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1wwBICxc_h1g9LoI13Wy9vejgdjkMrt_Rylp8u-n-zcE/edit?usp=sharing">Research
+                    Papers</a></strong> (for machine learning)
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1Lh2XWoi1mioe8d2LpNZEq6ewCRmyA8c_3oBafy7T3ZU/edit?usp=sharing">Datasets</a>
+                </strong>(for machine learning)
+                </li>
+            </ul>
+            <p>
+                <strong>Other Topics:</strong>
+            </p>
+            <ul>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1Qe7dkCPA35eYYcR7cx2Vc_WD6RZUtteXf96SJY28X4I/edit?usp=sharing">Giving
+                    Feedback</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1KsSosYDWvMQrXNZjgZyaNmvgcwi6SyvMHGVBjYoPwNU/edit?usp=sharing">Diversity
+                    and Inclusion</a></strong>
+
+                <li><strong><a
+                        href="https://docs.google.com/document/d/1ZfO0o2D2i3h3GSO0WNee350TMDhXix79Mx7YnFtkZmc/edit?usp=sharing">“The
+                    Art of the Career”</a></strong>
+                </li>
+            </ul>
+            <p>
+                <strong>Python (and CLI) Packages for Machine Learning</strong>
+            </p>
+            <ul>
+
+                <li><strong><a href="https://scikit-learn.org/">Scikit-learn</a>:
+                </strong>Package containing many fully-parameterizable machine
+                    learning models, such as SVM, Gradient-Boosted Decision
+                    Trees, etc.
+
+                <li><strong><a href="https://pandas.pydata.org/">Pandas</a>:
+                </strong>Library for manipulating data and doing feature
+                    engineering. The main data structure in this library is the
+                    <em>dataframe.</em> Especially helpful for:
+                    <ul>
+
+                        <li>Text data/mixed data types of
+                            numerical/non-numerical data
+
+                        <li>Other forms of “rectangular data”.
+
+                        <li>Data missing many values/data requiring extensive
+                            pre-processing/cleaning
+                        </li>
+                    </ul>
+
+                <li><strong><a href="https://numpy.org/">Numpy</a></strong>:
+                    Library for manipulating vector/matrix/numerical data. The
+                    main data structure in this library is <em>array. </em>Especially
+                    helpful for:
+                    <ul>
+
+                        <li>Linear algebra
+
+                        <li>Processing large volumes of vector data at a time
+
+                        <li>Computer vision/working with images
+                        </li>
+                    </ul>
+
+                <li><strong><a href="https://spacy.io/">SpaCy</a></strong>:
+                    Library for natural language processing, written in Python
+                    and Cython.
+
+                <li><strong><a href="https://www.scipy.org/">Scipy</a></strong>:
+                    Library for running complicated machine learning models when
+                    data is stored in an array format/has been manipulated by
+                    numpy.
+
+                <li><strong><a href="https://opencv.org/">OpenCV</a></strong>:
+                    Library for image processing and classical (mainly
+                    unsupervised) computer vision algorithms. Uses a C++ wrapper
+                    in the background, making it quite efficient and able to
+                    process image data efficiently. Has a strong bridge to numpy
+                    arrays, making this library very effective for computer
+                    vision when used with numpy.
+
+                <li><strong><a href="https://pillow.readthedocs.io/en/stable/">Pillow</a></strong>:
+                    Library for image processing. When this package loads
+                    images, rather than loading them into a numpy array (as
+                    OpenCV does), it loads images into their own custom objects.
+                    Contains a lot of additional functionality for processing
+                    and manipulating images via their numerical data directly.
+
+                <li><strong><a href="https://pypi.org/project/pytesseract/">PyTesseract</a></strong>:
+                    Library for Optical Character Recognition. Quite useful with
+                    OpenCV. You may need to install OpenCV and pillow.
+
+                <li><strong><a
+                        href="http://mallet.cs.umass.edu/">Mallet</a></strong>:
+                    CLI-based package for topic modeling through Latent
+                    Dirichlet Allocation. Quite useful if you’re trying to make
+                    a generative text model from a corpus (set) of textual
+                    documents.
+
+                <li><strong><a
+                        href="https://matplotlib.org/">Matplotlib</a></strong>:
+                    A library for plotting data for visualization. Can create
+                    plots for anything from 1D line plotting to 3D surface
+                    plotting.
+
+                <li><strong><a
+                        href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.stop_instances">boto3</a>:
+                </strong>This Python package is used as AWS’s EC2 API. If you
+                    ever need to integrate AWS EC2 into your machine learning
+                    projects through Python, boto3 is probably the best way to
+                    do so.
+
+                <li><strong><a href="https://keras.io/">Keras</a>: </strong>High-level
+                    deep learning API for TensorFlow. This library is especially
+                    useful if you want to prototype relatively straightforward,
+                    low-customization-needed models. If you need higher degrees
+                    of customization or as-fast-as-possible runtime, consider
+                    using PyTorch or TensorFlow.
+
+                <li><strong><a href="https://www.tensorflow.org/">TensorFlow</a></strong>:
+                    A highly-scalable and efficient library for creating
+                    fully-customizable machine learning models. If you plan to
+                    deploy a deep learning model, we strongly recommend using
+                    either this library or PyTorch. If you learn this library,
+                    we strongly recommend only learning TensorFlow 2.0, as
+                    TensorFlow 1.0 will soon become deprecated. Installation
+                    after 1.14 (highly recommended) includes both CPU and GPU
+                    capabilities, but TensorFlow is able to automatically
+                    determine what device to use based off the devices
+                    available. On the backend is a wrapper for Compute Unified
+                    Device Architecture (CUDA).
+
+                <li><strong><a href="https://pytorch.org/">PyTorch</a></strong>:
+                    A highly-scalable and efficient library for creating
+                    fully-customizable machine learning models. If you plan to
+                    deploy a deep learning model, we strongly recommend using
+                    either this library or TensorFlow. This library is typically
+                    considered to be more interpretable than TensorFlow, with
+                    comparable run-time performance. On the backend is a wrapper
+                    for Compute Unified Device Architecture (CUDA).
+
+                <li><strong><a
+                        href="https://developer.nvidia.com/cuda-toolkit?ncid=afm-chs-44270&ranMID=44270&ranEAID=a1LgFw09t88&ranSiteID=a1LgFw09t88-iCKM5VWCb0wiLabIchQDTg">CUDA
+                    (Compute Unified Device Architecture)</a></strong>: This is
+                    an API developed by NVIDIA that is used in both PyTorch and
+                    TensorFlow to coordinate devices for making computations. It
+                    is an important library to know if you are trying to build
+                    complex, real-time models with GPUs/multicore processors.
+                    Not completely Pythonic, but has some functionality within
+                    Python.
+                </li>
+            </ul>
+            <p>
+                <strong>Other Important Tools for Machine Learning</strong>
+            </p>
+            <ul>
+
+                <li><strong><a href="https://jupyter.org/">Jupyter</a>:
+                </strong>Jupyter is a framework for writing files into
+                    individual blocks of code. Especially helpful for when
+                    interfacing with remote virtual machines without a graphical
+                    user interface (GUI) (<strong>FREE</strong>).
+
+                <li><strong><a href="https://colab.research.google.com/">Google
+                    Colab</a></strong>: This resource looks quite similar to
+                    Jupyter notebook. It is run in the cloud (like AWS or
+                    Microsoft Azure), but it’s completely free, and doesn’t
+                    require an ssh connection. The best part is: you can even
+                    run GPUs (for free!) This makes the platform useful for
+                    training large neural network/computer vision models
+                    quickly. This resource is more oriented for research and
+                    development, and likely is not the best platform to use for
+                    deploying your models/applications (<strong>FREE</strong>).
+
+                <li><strong><a href="https://aws.amazon.com/">Amazon Web
+                    Services Elastic Computing (AWS EC2):</a> </strong>A cloud
+                    computing platform developed by Amazon that enables the
+                    creation of high-speed virtual machine computers. This
+                    resource is especially helpful for complex machine learning
+                    models, such as convolutional neural networks. Can be
+                    integrated with other resources, such as AWS Lambda and
+                    GitHub. (<strong>NOT FREE</strong>, but with some smart
+                    research prices are relatively reasonable).
+
+                <li><strong><a href="https://www.mturk.com/">Amazon Mechanical
+                    Turk:</a></strong> Found/have a dataset but don’t have
+                    labels for it? Amazon Mechanical Turk uses a crowdsourcing
+                    platform which pays people to label images for you. It’s
+                    especially great to use for large datasets (<strong>NOT
+                        FREE</strong>).
+
+                <li><strong><a
+                        href="https://cloud.google.com/gcp/?utm_source=google&utm_medium=cpc&utm_campaign=na-US-all-en-dr-bkws-all-all-trial-b-dr-1008076&utm_content=text-ad-lpsitelinkCCexp2-any-DEV_c-CRE_81884218687-ADGP_Hybrid+%7C+AW+SEM+%7C+BKWS+%7C+US+%7C+en+%7C+BMM+~+Cloud+Google-KWID_43700007265844938-kwd-26365363013&utm_term=KW_%2Bcloud%20%2Bgoogle-ST_%2Bcloud+%2Bgoogle&gclid=CjwKCAiA1L_xBRA2EiwAgcLKA7XEKm7NTRL5YtH8nXZsh2uDJLV0N30NVYemaL7ismc-YDGDtcMBzRoCSB4QAvD_BwE">Google
+                    Cloud Compute:</a></strong> A cloud computing platform
+                    developed by Google that enables the creation of high-speed
+                    virtual machine computers. User interface may be easier to
+                    use than AWS. This resource is especially helpful for
+                    complex machine learning models, such as convolutional
+                    neural networks (<strong>NOT FREE</strong>, but with some
+                    smart research prices are relatively reasonable).
+
+                <li><strong><a
+                        href="https://azure.microsoft.com/en-us/free/search/?&ef_id=CjwKCAjwvOHzBRBoEiwA48i6AqnNXEQMvqxj9i7bvgvk9b7p9ZDCl87ZH_CdkfCJHRxtO5kc8AuMYBoCBeUQAvD_BwE:G:s&OCID=AID2000128_SEM_fNqQIgDa&MarinID=fNqQIgDa_305965657353_azure_e_c__46775454899_kwd-295407966859&lnkd=Google_Azure_Brand&gclid=CjwKCAjwvOHzBRBoEiwA48i6AqnNXEQMvqxj9i7bvgvk9b7p9ZDCl87ZH_CdkfCJHRxtO5kc8AuMYBoCBeUQAvD_BwE">Microsoft
+                    Azure</a></strong>: A cloud computing platform developed by
+                    Microsoft. I haven’t used it, but it seems comparable and
+                    offers a lot of the same features as AWS and Google Cloud
+                    Compute.
+
+                <li><strong><a
+                        href="https://pip.pypa.io/en/stable/">Pip</a></strong>:
+                    This is an installer for Python packages. (“Python Install
+                    Package”.)
+
+                <li><strong><a href="https://www.anaconda.com/">Anaconda</a>:
+                </strong>Anaconda is a package manager for configuring and
+                    installing virtual environments on almost any computer. This
+                    is very useful for containerization, ensuring that the same
+                    environment used between different users gives each user the
+                    same computing environment (<strong>FREE </strong>except for
+                    enterprise).
+
+                <li><strong><a href="https://www.docker.com/">Docker</a>:
+                </strong>Docker is a containerization service that intuitively
+                    “containerizes” your code, and makes it operable across many
+                    different platforms and environments. Like Anaconda, it
+                    makes installing, maintaining and updating, and upgrading
+                    dependencies far easier. It is especially powerful when used
+                    for web application development.
+
+                <li><strong><a href="https://github.com/">GitHub</a>: </strong>A
+                    version control platform that allows for a <em>persistent
+                        state </em>to be hosted in a safe location online, as
+                    well as for users to work on the same code projects at the
+                    same time (<strong>FREE </strong>except for
+                    enterprise<strong>).</strong>
+
+                <li><strong><a
+                        href="https://en.wikipedia.org/wiki/Command-line_interface">Bash/Command-Line</a>:
+                </strong>The command line is helpful for creating, installing,
+                    and managing packages. Though each command line is different
+                    (especially between different operating systems), they can
+                    all be used to accelerate the machine learning process.
+
+                <li><strong><a href="https://stackoverflow.com/">Stack
+                    Overflow</a>: </strong>Do not be afraid to google things!
+                    Weird stack trace error that you cannot understand? Search
+                    it on stack overflow! Don’t know how to find something in a
+                    bash script? Again, try Stack Overflow! There is a good
+                    chance other people have ran into the exact same
+                    questions/problems as you, so let’s take advantage of that!
+
+                <li><strong><a href="https://www.programcreek.com/">Program
+                    Creek</a>: </strong>Another great source of documentation
+                    for code. Has a lot of helpful examples for showing how
+                    various functions are used.
+
+                <li><strong><a
+                        href="https://en.wikipedia.org/wiki/Integrated_development_environment">IDEs
+                    (Integrated Development Environments)</a>: </strong>These
+                    are great for coding more efficiently and effectively. IDEs
+                    typically provide a more user-friendly development
+                    environment, have debugging capabilities built-in, etc. Some
+                    recommended IDEs are:
+                    <ul>
+
+                        <li><strong><a
+                                href="https://www.jetbrains.com/pycharm/">PyCharm</a></strong>
+                            (<strong>FREE </strong>with student ID)
+
+                        <li><strong><a href="https://code.visualstudio.com/">Visual
+                            Studio Code</a></strong> (<strong>FREE</strong>)
+
+                        <li><strong><a
+                                href="https://www.spyder-ide.org/">Spyder</a></strong>
+                            (<strong>FREE)</strong>
+
+                        <li><strong><a
+                                href="https://www.eclipse.org/">Eclipse</a></strong>
+                            (this one is good if you’re using Java) (<strong>FREE</strong>)
+
+                        <li><strong><a href="https://www.sublimetext.com/">Sublime</a></strong>
+                            (lighter weight) (<strong>FREE</strong> for trial
+                            period)
+
+                        <li><strong><a
+                                href="https://www.gnu.org/software/emacs/">Emacs</a></strong>
+
+                        <li><strong><a
+                                href="https://www.vim.org/">Vim</a></strong>
+                            (only if you’re <strong>REALLY</strong> obsessed
+                            with coding) (<strong>FREE</strong>)
+                        </li>
+                    </ul>
+
+                <li><strong><a href="https://kite.com/">Kite</a>: </strong>AI-powered
+                    auto-complete and docstring writing. Very new but works
+                    really well and drastically reduces time spent typing.
+                    Configurable with certain (at this point probably most) IDEs
+                    (<strong>FREE</strong>).
+
+                <li><strong><a href="https://docs.python.org/3/">Python Package
+                    Documentation</a>: </strong>Many packages we use in this
+                    course, such as numpy, scipy, pandas, sklearn, etc. have
+                    developed really strong, concise, and user-friendly
+                    documentation. If you need to use a function with one of
+                    these packages but do not know which function to use, try
+                    searching the documentation here! Chances are that a
+                    function already exists.
+                </li>
+            </ul>
+            <p>
+                <strong>Other Resources for Machine Learning:</strong>
+            </p>
+            <ul>
+
+                <li><strong>MIT Courses:</strong>
+                    <ul>
+
+                        <li><strong><a href="http://introtodeeplearning.com/">6.S191
+                            - Intro to Deep Learning</a></strong>
+
+                        <li><strong><a
+                                href="https://phillipi.github.io/6.882/notes/6.036_notes.pdf">6.036
+                            - Intro to Machine Learning</a></strong>
+
+                        <li><strong><a
+                                href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-438-algorithms-for-inference-fall-2014/lecture-notes/">6.438
+                            - Algorithms for Inference</a></strong>
+                            <ul>
+
+                                <li>You can find my notes for this class <a
+                                        href="https://www.overleaf.com/read/drpstbghkdrt">here</a>.
+                                </li>
+                            </ul>
+
+                        <li><strong><a
+                                href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-801-machine-vision-fall-2004/">6.866
+                            - Machine VIsion</a></strong>
+                            <ul>
+
+                                <li>You can find my lecture notes <a
+                                        href="https://www.overleaf.com/read/vcyrkphktgct">here</a>.
+
+                                <li>You can find my notes for the textbook,
+                                    Robot Vision, <a
+                                            href="https://www.overleaf.com/read/yqpwbpzpmscf">here</a>.
+                                </li>
+                            </ul>
+
+                        <li><strong><a
+                                href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-867-machine-learning-fall-2006/">6.867
+                            - Machine Learning</a></strong>
+
+                        <li><strong><a
+                                href="http://6.869.csail.mit.edu/fa19/index.html">6.869
+                            - Advances in Computer Vision</a></strong>
+
+                        <li><strong><a
+                                href="https://phillipi.github.io/6.882/2020/">6.882
+                            - Embodied Intelligence</a></strong>
+                            <ul>
+
+                                <li>You can find my notes for this class <a
+                                        href="https://www.overleaf.com/read/brygxnvvbnsm">here</a>.
+                                </li>
+                            </ul>
+
+                        <li><strong><a
+                                href="http://probcomp.csail.mit.edu/6-885-spring-2020/">6.885
+                            - Probabilistic Programming and Artificial
+                            Intelligence</a></strong>
+                            <ul>
+
+                                <li>You can find my notes for this class <a
+                                        href="https://www.overleaf.com/read/fxzdgkjrrghx">here</a>.
+                                </li>
+                            </ul>
+
+                        <li><strong><a href="https://missing.csail.mit.edu/">“The
+                            Missing Semester of Your CS Education”</a></strong>
+
+                        <li><strong><a href="http://weblab.mit.edu/">MIT Web
+                            Development Lab</a></strong>
+
+                        <li><strong><a
+                                href="https://developers.google.com/machine-learning/crash-course/">Google
+                            Crash Course in Machine Learning</a></strong>
+
+                        <li><strong><a
+                                href="https://developers.google.com/machine-learning/glossary/">Google
+                            Machine Learning Glossary</a></strong>
+                            <ul>
+                            </ul>
+                        </li>
+                    </ul>
+
+                <li><strong>Textbooks:</strong>
+                    <ul>
+
+                        <li><strong><a
+                                href="http://www.inference.org.uk/itprnn/book.pdf">Information
+                            Theory, Inference, and Learning
+                            Algorithms</a></strong>
+
+                        <li><strong><a
+                                href="http://incompleteideas.net/book/bookdraft2017nov5.pdf">Reinforcement
+                            Learning: An Introduction</a></strong>
+
+                        <li><strong><a
+                                href="https://mitpress.mit.edu/books/robot-vision">Robot
+                            Vision</a></strong>
+
+                        <li><strong><a
+                                href="https://www.amazon.com/Intelligence-Based-Medicine-Artificial-Intelligence-Healthcare/dp/012816462X">Intelligence-Based
+                            Medicine</a></strong>
+                            <ul>
+                            </ul>
+                        </li>
+                    </ul>
+
+                <li><strong>Websites:</strong>
+                    <ul>
+
+                        <li><strong><a
+                                href="https://lilianweng.github.io/lil-log/">Lil’Log</a></strong>
+
+                        <li><strong><a
+                                href="https://robotacademy.net.au/">Robot
+                            Academy</a></strong>
+
+                            <footer class="col-md-12">
+                                <hr>
+                                <p>Documentation built with <a
+                                        href="https://www.mkdocs.org/">MkDocs</a>.
+                                </p>
+                            </footer>
+                            <script>
+                                var base_url = ".",
+                                    shortcuts = {
+                                        "help": 191,
+                                        "next": 78,
+                                        "previous": 80,
+                                        "search": 83
+                                    };
+                            </script>
+                            <script src="js/base.js" defer></script>
+                            <script src="search/main.js" defer></script>
+
+                            <div class="modal" id="mkdocs_search_modal"
+                                 tabindex="-1" role="dialog"
+                                 aria-labelledby="searchModalLabel"
+                                 aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title"
+                                                id="searchModalLabel">
+                                                Search</h4>
+                                            <button type="button"
+                                                    class="close"
+                                                    data-dismiss="modal">
+                                                <span aria-hidden="true">&times;</span><span
+                                                    class="sr-only">Close</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                From here you can search
+                                                these documents. Enter
+                                                your search terms below.
+                                            </p>
+                                            <form>
+                                                <div class="form-group">
+                                                    <input type="search"
+                                                           class="form-control"
+                                                           placeholder="Search..."
+                                                           id="mkdocs-search-query"
+                                                           title="Type search term here">
+                                                </div>
+                                            </form>
+                                            <div id="mkdocs-search-results"></div>
+                                        </div>
+                                        <div class="modal-footer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal"
+                                 id="mkdocs_keyboard_modal"
+                                 tabindex="-1" role="dialog"
+                                 aria-labelledby="keyboardModalLabel"
+                                 aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title"
+                                                id="keyboardModalLabel">
+                                                Keyboard Shortcuts</h4>
+                                            <button type="button"
+                                                    class="close"
+                                                    data-dismiss="modal">
+                                                <span aria-hidden="true">&times;</span><span
+                                                    class="sr-only">Close</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <table class="table">
+                                                <thead>
+                                                <tr>
+                                                    <th style="width: 20%;">
+                                                        Keys
+                                                    </th>
+                                                    <th>Action</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="help shortcut">
+                                                        <kbd>?</kbd>
+                                                    </td>
+                                                    <td>Open this help
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="next shortcut">
+                                                        <kbd>n</kbd>
+                                                    </td>
+                                                    <td>Next page</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="prev shortcut">
+                                                        <kbd>p</kbd>
+                                                    </td>
+                                                    <td>Previous page
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="search shortcut">
+                                                        <kbd>s</kbd>
+                                                    </td>
+                                                    <td>Search</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+</body>
 </html>
 
 <!--
