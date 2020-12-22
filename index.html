@@ -88,7 +88,8 @@
     <meta property="og:description"
           content="AI Grad Student at MIT,
                    Machine Vision Teaching Assistant,
-                   Research Assistant in MIT CSAIL Distributed Robotics Laboratory">">
+                   Research Assistant in MIT CSAIL Distributed Robotics Laboratory">
+    ">
     <meta property="og:locale" content="en-us">
 
     <meta property="og:updated_time" content="2016-04-20T00:00:00&#43;00:00">
@@ -226,8 +227,9 @@
                     <div class="portrait-title">
                         <h3 itemprop="name">Ryan Sander</h3>
                         <h3 itemprop="jobTitle">AI Grad Student at MIT,
-                   Machine Vision Teaching Assistant,
-                   Research Assistant in MIT CSAIL Distributed Robotics Laboratory</h3>
+                            Machine Vision Teaching Assistant,
+                            Research Assistant in MIT CSAIL Distributed Robotics
+                            Laboratory</h3>
 
 
                         <h3 itemprop="worksFor" itemscope
@@ -310,17 +312,25 @@
 
                 <h2 id="biography">Biography</h2>
 
-                <p>Ryan Sander is a Master's student at the Massachusetts Institute of Technology,
-                    studying artificial intelligence.  He is a teaching assistant for MIT's Machine Vision
+                <p>Ryan Sander is a Master's student at the Massachusetts
+                    Institute of Technology,
+                    studying artificial intelligence. He is a teaching assistant
+                    for MIT's Machine Vision
                     course, as well as a research assistant under
-                    MIT CSAIL's <a href="https://https://www.csail.mit.edu/research/distributed-robotics-laboratory"
+                    MIT CSAIL's <a
+                            href="https://https://www.csail.mit.edu/research/distributed-robotics-laboratory"
                             , target="_blank">Distributed Robotics Lab</a>.
-                    Ryan's research focuses primarily on increasing the robustness
-                    of deep single and multi-agent reinforcement learning algorithms.</p>
+                    Ryan's research focuses primarily on increasing the
+                    robustness
+                    of deep single and multi-agent reinforcement learning
+                    algorithms.</p>
 
-                <p>Outside of research and teaching, Ryan is pursuing graduate coursework in
-                    computer vision for autonomous vehicles, as well as staying involved with
-                    his school's chapter of Tau Beta Pi as webmaster and secretary.
+                <p>Outside of research and teaching, Ryan is pursuing graduate
+                    coursework in
+                    computer vision for autonomous vehicles, as well as staying
+                    involved with
+                    his school's chapter of Tau Beta Pi as webmaster and
+                    secretary.
                     In his free time, Ryan enjoys running and
                     biking around Boston, as well as lifting weights and
                     listening to music.</p>
@@ -398,7 +408,131 @@
             </div>
             <div class="col-xs-12 col-md-8">
 
+                <div class="pub-list-item card-simple" itemscope
+                     itemtype="http://schema.org/CreativeWork">
 
+                    <h3 class="article-title" itemprop="name">
+                        <a href="https://sites.google.com/view/deep-latent-competition"
+                           itemprop="url">Lidar-Lidar Hand-Eye Calibration
+                            via Optimization on SE(3)</a>
+                    </h3>
+
+                    <div class="pub-abstract" itemprop="text">
+
+                        As more autonomous systems become equipped
+                        with sensors for remote sensing, it is imperative we
+                        have methods for fast and efficient online calibration
+                        between these sensors. This is particularly important
+                        for systems with
+                        odometric drift and time-varying sensor extrinsics. In
+                        this
+                        paper, we implement a lidar-lidar calibration framework
+                        for use
+                        in the DARPA Subterranean Challenge. Using informed
+                        nonlinear
+                        on-manifold optimization to solve for an optimal
+                        relative
+                        pose in tandem with pose visualizations and both
+                        internal and
+                        external calibration scoring criteria, we develop a
+                        self-contained estimation and evaluation framework for
+                        estimating and
+                        determining the quality of lidar calibration.
+                    </div>
+
+                    <div class="pub-authors" itemprop="author">
+                        Dakota Wenberg*, Aaron Ray*, Ryan Sander*
+                        (*All authors contributed equally)
+                    </div>
+
+                    <div class="pub-publication">
+                        16.485 Final Project
+                    </div>
+
+                    <a class="btn btn-primary btn-outline btn-xs"
+                       href="projects/lidar_lidar_cal.pdf"
+                       target="_blank" rel="noopener"> Paper </a>
+
+                    <a class="btn btn-primary btn-outline btn-xs"
+                       href="projects/lidar_lidar_cal_slides.pdf"
+                       target="_blank" rel="noopener"> Slides </a>
+
+                    <a class="btn btn-primary btn-outline btn-xs"
+                       href="https://github.com/rmsander/lidar-lidar-cal/"
+                       target="_blank"
+                       rel="noopener">GitHub</a>
+
+
+                    <div class="pub-links">
+
+                    </div>
+
+                </div>
+
+                <div class="pub-list-item card-simple" itemscope
+                     itemtype="http://schema.org/CreativeWork">
+
+                    <h3 class="article-title" itemprop="name">
+                        <a href="https://sites.google.com/view/deep-latent-competition"
+                           itemprop="url">Deep Latent Competition: Learning to
+                            Race Using Visual Control Policies in Latent
+                            Space</a>
+                    </h3>
+
+                    <div class="pub-abstract" itemprop="text">
+
+                        Learning competitive behaviors in multi-agent settings
+                        such as racing
+                        requires long-term reasoning about potential adversarial
+                        interactions. This paper
+                        presents Deep Latent Competition (DLC), a novel
+                        reinforcement learning algorithm
+                        that learns competitive visual control policies through
+                        self-play in imagination. The
+                        DLC agent imagines multi-agent interaction sequences in
+                        the compact latent space
+                        of a learned world model that combines a joint
+                        transition function with opponent
+                        viewpoint prediction. Imagined self-play reduces costly
+                        sample generation in the
+                        real world, while the latent representation enables
+                        planning to scale gracefully with
+                        observation dimensionality. We demonstrate the
+                        effectiveness of our algorithm
+                        in learning competitive behaviors on a novel multi-agent
+                        racing benchmark that
+                        requires planning from image observations.
+                    </div>
+
+                    <div class="pub-authors" itemprop="author">
+                        Wilko Schwarting, Tim Seyde, Igor Gilitschenski,
+                        Lucas Liebenwein, Ryan Sander, Sertac Karaman, Daniela
+                        Rus
+                    </div>
+
+                    <div class="pub-publication">
+                        CoRL 2020 Paper
+                    </div>
+
+                    <a class="btn btn-primary btn-outline btn-xs"
+                       href="projects/corl20-deep_latent_competition.pdf"
+                       target="_blank" rel="noopener"> Paper </a>
+
+                    <a class="btn btn-primary btn-outline btn-xs"
+                       href="https://sites.google.com/view/deep-latent-competition"
+                       target="_blank" rel="noopener"> Website </a>
+
+                    <a class="btn btn-primary btn-outline btn-xs"
+                       href="https://github.com/igilitschenski/multi_car_racing/"
+                       target="_blank"
+                       rel="noopener">GitHub</a>
+
+
+                    <div class="pub-links">
+
+                    </div>
+
+                </div>
 
                 <div class="pub-list-item card-simple" itemscope
                      itemtype="http://schema.org/CreativeWork">
@@ -604,12 +738,36 @@
                         <div class="description">
                             <strong><p class="course"> Teaching
                                 Assistant</p></strong>
-                            <p class="institution">6.801/6.866: Machine Vision| Massachusetts
+                            <p class="institution">6.s191: Introduction to Deep
+                                Learning| Massachusetts
+                                Institute of Technology | January 2021</p>
+                            <p class="course">Course covering the fundamentals
+                                of deep learning,
+                                including deep neural networks, Convolutional
+                                Neural Networks (CNNs),
+                                Recurrent Neural Networks (RNNs), Variational
+                                Autoencoders (VAEs),
+                                and Generative Adversarial Neural Networks
+                                (GANs). The course is
+                                structured with both theoretical and hands-on
+                                components.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="description">
+                            <strong><p class="course"> Teaching
+                                Assistant</p></strong>
+                            <p class="institution">6.801/6.866: Machine Vision|
+                                Massachusetts
                                 Institute of Technology | Sep - Dec
                                 2020</p>
-                            <p class="course">Computer vision course focused on geometric
-                                computer vision algorithms, such as edge detection, time to contact,
-                                motion estimation, camera calibration, and recovery of 3D structure
+                            <p class="course">Computer vision course focused on
+                                geometric
+                                computer vision algorithms, such as edge
+                                detection, time to contact,
+                                motion estimation, camera calibration, and
+                                recovery of 3D structure
                                 from 2D imagery.
                             </p>
                         </div>
@@ -618,11 +776,14 @@
                         <div class="description">
                             <strong><p class="course"> Incoming Teaching
                                 Assistant</p></strong>
-                            <p class="institution">6.s191: Introduction to Deep Learning | Massachusetts
+                            <p class="institution">6.s191: Introduction to Deep
+                                Learning | Massachusetts
                                 Institute of Technology | January 2021</p>
-                            <p class="course">Introductory course covering theoretical foundations and applications of
-                                deep learning.  More information can be found
-                                <a href="http://introtodeeplearning.com//">here</a>.</p>.
+                            <p class="course">Introductory course covering
+                                theoretical foundations and applications of
+                                deep learning. More information can be found
+                                <a href="http://introtodeeplearning.com//">here</a>.
+                            </p>.
                             </p>
                         </div>
                     </li>
@@ -724,12 +885,20 @@
                 <ul class="ul-edu fa-ul">
                     <li>
                         <div class="description">
-                            <strong></stron><p class="course">Machine Learning and Python Tutor</p></strong>
-                            <p class="institution">Wyzant | March 2020 - present | Remote</p>
-                            <p class="course">Tutoring students online in machine learning, Python,
-                                artificial intelligence, and econometrics.  I have over 225 hours of
-                                tutoring experience, as well as a 5.0/5.0 rating.  You can find my profile <a href="https://www.wyzant.com/Tutors/rms">here</a>,
-                                though depending on the number of students I'm tutoring at the time, it may not be available.  Linked below is a codebase I've created
+                            <strong></stron><p class="course">Machine Learning
+                                and Python Tutor</p></strong>
+                            <p class="institution">Wyzant | March 2020 - present
+                                | Remote</p>
+                            <p class="course">Tutoring students online in
+                                machine learning, Python,
+                                artificial intelligence, and econometrics. I
+                                have over 225 hours of
+                                tutoring experience, as well as a 5.0/5.0
+                                rating. You can find my profile <a
+                                        href="https://www.wyzant.com/Tutors/rms">here</a>,
+                                though depending on the number of students I'm
+                                tutoring at the time, it may not be available.
+                                Linked below is a codebase I've created
                                 for tutoring.
                             </p>
                         </div>
@@ -745,10 +914,14 @@
                     <li>
                         <div class="description">
                             <strong><p class="course">Educator</p></strong>
-                            <p class="institution">Numerade | April 2020 - present | Remote</p>
-                            <p class="course">Developing videos for solutions to textbook problems in
-                                linear algebra, probability and statistics, and pre-calculus.  You can find my profile
-                                <a href="https://www.numerade.com/educators/profile/bbryan-s-10/">here</a>.</p>
+                            <p class="institution">Numerade | April 2020 -
+                                present | Remote</p>
+                            <p class="course">Developing videos for solutions to
+                                textbook problems in
+                                linear algebra, probability and statistics, and
+                                pre-calculus. You can find my profile
+                                <a href="https://www.numerade.com/educators/profile/bbryan-s-10/">here</a>.
+                            </p>
                         </div>
                     </li>
                 </ul>
@@ -778,8 +951,10 @@
                             <p class="course">Leading a project for
                                 integrating and iterating on a collaborative
                                 filtering-based class recommendation system
-                                for students at MIT.  Additionally, led an effort to
-                                develop documentation for our website codebase to
+                                for students at MIT. Additionally, led an effort
+                                to
+                                develop documentation for our website codebase
+                                to
                                 optimize the webmaster transition process.
                             </p>
                         </div>
@@ -794,7 +969,8 @@
                             <p class="course">Providing community
                                 service mentorship for students to help them
                                 create meaningful impact in the local
-                                community.  Past projects have included: Habitat for Humanity,
+                                community. Past projects have included: Habitat
+                                for Humanity,
                                 Red Sox Green Team, and Girls Who Code.
                             </p>
                         </div>
@@ -822,7 +998,7 @@
                             <p class="course">Leading a team of 50 members to
                                 organize events and create opportunities in
                                 energy education and professional
-                                development.  Past events have included:
+                                development. Past events have included:
                                 Working the Energy Transition forum, MIT
                                 Energy Career Fair, and energy social mixers.
                             </p>
@@ -836,7 +1012,7 @@
                             <p class="institution">Kappa Sigma, Gamma Pi Chapter
                             </p>
                             <p class="course">Organized community service and
-                                philanthropy events for my chapter.  Past
+                                philanthropy events for my chapter. Past
                                 projects have included: Military Heroes
                                 Campaign fundraiser, career fair t-shirt drive,
                                 and food pantry and homeless dinner service
@@ -848,7 +1024,6 @@
             </div>
         </div>
 </section>
-
 
 
 <section id="contact" class="home-section">
@@ -998,6 +1173,10 @@
 
 <script type="text/x-mathjax-config">
         MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+
+
+
+
 
 
 
